@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+/* Interactive avatar carousel: slide size drives both layout and the track's centering math. */
+.ia-carousel {
+  --ia-slide-w: 16.875rem;
+  --ia-slide-h: 20.5rem;
+  --ia-gap: 2rem;
+}
+
+@media (min-width: 992px) {
+  .ia-carousel {
+    --ia-slide-w: 17.875rem;
+    --ia-slide-h: 21.5rem;
+  }
+
+  .ia-track:has(.ia-slide:hover) .ia-slide:not(:hover) {
+    opacity: 0.5;
+  }
+}
+
+@layer utilities {
+  .hide-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+  }
+}
