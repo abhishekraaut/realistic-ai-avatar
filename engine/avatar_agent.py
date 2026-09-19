@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 from livekit import rtc
 from livekit.agents import JobContext, JobProcess, JobRequest, WorkerOptions, cli, tts
 from livekit.agents.job import AutoSubscribe
-from livekit.agents.voice import Agent, AgentState
+from livekit.agents.voice import Agent
 from livekit.plugins import deepgram, elevenlabs, silero, google
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -163,7 +163,7 @@ async def entrypoint(ctx: JobContext):
         instructions="You are a helpful AI advisor."
     )
     
-    def on_state_changed(agent: Agent, state: AgentState):
+    def on_state_changed(agent: Agent, state):
         state_name = state.name if hasattr(state, 'name') else str(state).split('.')[-1]
         logger.info(f"Avatar State Transition -> {state_name}")
         if state_name == "LISTENING":
