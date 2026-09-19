@@ -34,7 +34,7 @@ Because the landmarks are normalized by the inter-ocular distance (IOD), a squar
 The network successfully predicts the 8 PCA components directly from the audio envelope. Because the PCA targets carry genuine variance (unlike the `jaw_open` blendshape in V3), the network is forced to learn the actual lip closures, widenings, and jaw drops present in the source video. The temporal jitter in the latent space (`0.0221`) remains highly stable due to the velocity penalty in the loss function.
 
 ## Conclusion
-V4 is a massive success. The transition from 4 arbitrary blendshapes to a dense, PCA-compressed 478-point facial mesh proved that the `Conv1D + LSTM` temporal audio architecture is fully capable of driving rich, high-fidelity facial kinematics. We can now accurately reconstruct the entire face mesh from streaming audio with sub-millimeter relative precision.
+V4 is a massive success. The transition from 4 arbitrary blendshapes to a dense, PCA-compressed 478-point facial mesh proved that the `Conv1D + LSTM` temporal audio architecture is fully capable of driving rich, high-fidelity facial kinematics. We can now accurately reconstruct the entire face mesh from streaming audio with normalized coordinate precision equal to ~2.7% of the inter-ocular distance.
 
 ## Next Action
 With a robust, verified Audio -> Dense Facial Motion pipeline, the numerical control system is complete. The next logical phase is to route these highly accurate predicted facial landmarks into a **Neural Video Renderer** to generate photorealistic output frames.

@@ -1,0 +1,17 @@
+{
+  "experiment_name": "renderer-v1-static-512",
+  "phase": "Phase 8B",
+  "task": "Ground-Truth Motion -> Image Reconstruction",
+  "image_size": [512, 512],
+  "motion_dimension": 11,
+  "batch_size": 4,
+  "optimizer": "Adam",
+  "learning_rate": 0.0002,
+  "loss": "L1",
+  "epochs": 100,
+  "validation_interval": 1,
+  "checkpoint_path": "backend/training/checkpoints",
+  "seed": 42,
+  "device": "cuda",
+  "mixed_precision": true
+}

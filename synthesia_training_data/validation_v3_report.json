@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "total_sequences": 6,
+  "total_frames": 1418,
+  "total_duration": 56.72,
+  "dropped_samples": 0,
+  "issues": [],
+  "splits": {
+    "train": 970,
+    "val": 300,
+    "test": 148
+  }
+}
