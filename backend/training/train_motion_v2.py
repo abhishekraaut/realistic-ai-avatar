@@ -1,62 +1,139 @@
 import os
 import sys
+import json
 import torch
 import torch.nn as nn
 import torch.optim as optim
+import random
+import numpy as np
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from models.motion_model import LearnedTemporalMotionModel
 
-def train_smoke_test():
-    device = torch.device("cpu")
+def set_seed(seed=42):
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed_all(seed)
+
+def compute_velocity_loss(preds, targets):
+    pred_vel = preds[:, 1:, :] - preds[:, :-1, :]
+    target_vel = targets[:, 1:, :] - targets[:, :-1, :]
+    return nn.MSELoss()(pred_vel, target_vel)
+
+def train_baseline():
+    set_seed(42)
+    device = torch.device("cpu") # CUDA verified unavailable
     print(f"Using device: {device}")
     
-    dataset_path = r"C:\Users\iabhi\Downloads\Avtar-Project\synthesia_training_data\dataset_v2.pt"
-    ckpt_dir = r"C:\Users\iabhi\Downloads\Avtar-Project\backend\training\checkpoints"
+    # Paths
+    base_dir = r"C:\Users\iabhi\Downloads\Avtar-Project"
+    dataset_path = os.path.join(base_dir, "synthesia_training_data", "dataset_v2.pt")
+    ckpt_dir = os.path.join(base_dir, "backend", "training", "checkpoints")
+    artifacts_dir = os.path.join(base_dir, "artifacts")
     os.makedirs(ckpt_dir, exist_ok=True)
+    os.makedirs(artifacts_dir, exist_ok=True)
     
     data = torch.load(dataset_path, map_location=device)
     
-    X_train = data["train"]["X"].unsqueeze(0) # (1, T, 80)
-    Y_train = data["train"]["Y"].unsqueeze(0) # (1, T, 4)
-    
-    X_val = data["val"]["X"].unsqueeze(0) if data["val"]["X"].shape[0] > 0 else None
-    Y_val = data["val"]["Y"].unsqueeze(0) if data["val"]["Y"].shape[0] > 0 else None
+    X_train = data["train"]["X"].unsqueeze(0) # (1, T_train, 80)
+    Y_train = data["train"]["Y"].unsqueeze(0) # (1, T_train, 4)
+    X_val = data["val"]["X"].unsqueeze(0)     # (1, T_val, 80)
+    Y_val = data["val"]["Y"].unsqueeze(0)     # (1, T_val, 4)
     
     print(f"Train Shape: X={X_train.shape}, Y={Y_train.shape}")
-    if X_val is not None:
-        print(f"Val Shape: X={X_val.shape}, Y={Y_val.shape}")
+    print(f"Val Shape: X={X_val.shape}, Y={Y_val.shape}")
+    
+    # Normalization (Fit on Train ONLY)
+    # X_train is (1, T, 80), compute mean, std along T
+    x_mean = X_train.mean(dim=1, keepdim=True)
+    x_std = X_train.std(dim=1, keepdim=True) + 1e-8
+    
+    X_train_norm = (X_train - x_mean) / x_std
+    X_val_norm = (X_val - x_mean) / x_std
     
     model = LearnedTemporalMotionModel(input_dim=80, hidden_dim=64, output_dim=4).to(device)
-    optimizer = optim.Adam(model.parameters(), lr=1e-3)
+    optimizer = optim.Adam(model.parameters(), lr=1e-3, weight_decay=1e-5)
     mse_loss_fn = nn.MSELoss()
     
-    # Tiny Smoke Test (5 Epochs)
-    epochs = 5
+    epochs = 400
+    patience = 50
+    best_val_loss = float('inf')
+    epochs_no_improve = 0
+    best_epoch = 0
+    
+    metrics_history = []
+    
+    print("Starting Training Loop...")
     for epoch in range(epochs):
         model.train()
         optimizer.zero_grad()
         
-        preds = model(X_train)
+        preds = model(X_train_norm)
         recon_loss = mse_loss_fn(preds, Y_train)
-        pred_vel = preds[:, 1:, :] - preds[:, :-1, :]
-        target_vel = Y_train[:, 1:, :] - Y_train[:, :-1, :]
-        vel_loss = mse_loss_fn(pred_vel, target_vel)
-        loss = recon_loss + 0.5 * vel_loss
+        vel_loss = compute_velocity_loss(preds, Y_train)
+        train_total = recon_loss + 0.5 * vel_loss
         
-        loss.backward()
+        train_total.backward()
+        # Gradient clipping
+        torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
         optimizer.step()
         
-        print(f"Epoch {epoch} | Train Loss: {loss.item():.4f}")
-        
-    if X_val is not None:
+        # Validation
         model.eval()
         with torch.no_grad():
-            preds_val = model(X_val)
-            val_loss = mse_loss_fn(preds_val, Y_val)
-            print(f"Validation MSE: {val_loss.item():.4f}")
+            preds_val = model(X_val_norm)
+            val_recon = mse_loss_fn(preds_val, Y_val)
+            val_vel = compute_velocity_loss(preds_val, Y_val)
+            val_total = val_recon + 0.5 * val_vel
             
-    print("Smoke Test Passed!")
+        metrics = {
+            "epoch": epoch,
+            "train_recon": recon_loss.item(),
+            "train_vel": vel_loss.item(),
+            "train_total": train_total.item(),
+            "val_recon": val_recon.item(),
+            "val_vel": val_vel.item(),
+            "val_total": val_total.item()
+        }
+        metrics_history.append(metrics)
+        
+        if epoch % 10 == 0:
+            print(f"Epoch {epoch:03d} | Train: {train_total.item():.4f} | Val: {val_total.item():.4f}")
+            
+        # Checkpoint logic
+        ckpt_state = {
+            "model_state": model.state_dict(),
+            "optimizer_state": optimizer.state_dict(),
+            "epoch": epoch,
+            "config": {"input_dim": 80, "hidden_dim": 64, "output_dim": 4, "architecture": "Conv1D_LSTM"},
+            "norm_stats": {"x_mean": x_mean, "x_std": x_std},
+            "fps_policy": "NATIVE_25FPS"
+        }
+        
+        # Save latest
+        torch.save(ckpt_state, os.path.join(ckpt_dir, "learned_motion_v2_latest.pt"))
+        
+        # Save best
+        if val_total.item() < best_val_loss:
+            best_val_loss = val_total.item()
+            best_epoch = epoch
+            epochs_no_improve = 0
+            torch.save(ckpt_state, os.path.join(ckpt_dir, "learned_motion_v2_best.pt"))
+        else:
+            epochs_no_improve += 1
+            
+        # Early Stopping
+        if epochs_no_improve >= patience:
+            print(f"Early stopping triggered at epoch {epoch}. Best epoch was {best_epoch} (Val Loss: {best_val_loss:.4f})")
+            break
+            
+    # Save metrics
+    with open(os.path.join(artifacts_dir, "motion_v2_training_metrics.json"), "w") as f:
+        json.dump(metrics_history, f, indent=2)
+        
+    print("Training Complete!")
 
 if __name__ == "__main__":
-    train_smoke_test()
+    train_baseline()
