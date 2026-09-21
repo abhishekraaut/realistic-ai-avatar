@@ -13,34 +13,27 @@ import numpy as np
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from models.neural_renderer_v1 import NeuralRendererV1
 
-def load_frame(video_path, frame_idx, resolution=(512, 512)):
-    cap = cv2.VideoCapture(video_path)
-    cap.set(cv2.CAP_PROP_POS_FRAMES, frame_idx)
-    ret, frame = cap.read()
-    cap.release()
-    if not ret: return None
-    frame = cv2.resize(frame, resolution)
-    frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-    frame = (frame / 127.5) - 1.0 # [-1, 1]
-    return torch.tensor(frame, dtype=torch.float32).permute(2, 0, 1)
-
 class RendererDataset(Dataset):
-    def __init__(self, split_data, asset_dir, resolution=(512, 512)):
-        self.asset_dir = asset_dir
-        self.resolution = resolution
-        self.samples = []
+    def __init__(self, data_v4, images_v4, split):
+        # data_v4 is dict with keys X, Y
+        # images_v4 is list of dicts {"identity_frame": tensor, "target_frame": tensor}
+        self.X = data_v4[split]["X"]
+        self.Y = data_v4[split]["Y"]
+        self.images = images_v4[split]
         
-        # split_data has X (audio), Y (motion_target)
-        # However, dataset_v4 lacks strict video frame indexing per target in the tensor.
-        # We need to map sequences. Assuming dataset_v4.pt keeps sequence order.
-        # For simplicity in this robust script, we'll assume we pass the raw data dict with seq_id and frames.
-        self.samples = split_data # list of dicts: {"video_path": str, "frame_idx": int, "identity_frame": tensor, "motion": tensor, "target_frame": tensor}
+        assert self.Y.shape[0] == len(self.images), f"Mismatch in {split} split! Y: {self.Y.shape[0]}, Images: {len(self.images)}"
         
     def __len__(self):
-        return len(self.samples)
+        return self.Y.shape[0]
         
     def __getitem__(self, idx):
-        return self.samples[idx]
+        # X: audio features (not used in Phase 8B static motion-only experiment, but available)
+        # Y: ground truth 11D motion
+        return {
+            "identity_img": self.images[idx]["identity_frame"],
+            "motion_vector": self.Y[idx],
+            "target_img": self.images[idx]["target_frame"]
+        }
 
 def calculate_psnr(mse):
     if mse == 0: return 100
@@ -53,40 +46,134 @@ def train_renderer_v1():
     print(f"Device selected: {device}")
     
     if device.type == "cpu":
-        print("WARNING: GPU is not available. Stopping full training as per environmental constraints.")
-        print("Proceeding with minimal validation/smoke-test logic only.")
-        epochs = 1
-        is_smoke_test = True
-    else:
-        epochs = 100
-        is_smoke_test = False
+        print("ERROR: GPU is required for Phase 8B.")
+        return
         
-    base_dir = r"C:\Users\iabhi\Downloads\Avtar-Project"
+    epochs = 150
+    batch_size = 4 # Adjust based on 6GB VRAM. 512x512 images.
+    learning_rate = 1e-4
+        
+    base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
     ckpt_dir = os.path.join(base_dir, "backend", "training", "checkpoints")
     os.makedirs(ckpt_dir, exist_ok=True)
     
-    # In a real heavy-GPU setup, we would load dataset_v4_manifest and build the VideoDataset.
-    # For now, we mock the robust structure that supports CUDA, mixed precision, and Identity Selection.
+    data_v4_path = os.path.join(base_dir, "synthesia_training_data", "dataset_v4.pt")
+    images_v4_path = os.path.join(base_dir, "synthesia_training_data", "dataset_v4_images.pt")
+    
+    print("Loading datasets...")
+    data_v4 = torch.load(data_v4_path, map_location="cpu", weights_only=False)
+    images_v4 = torch.load(images_v4_path, map_location="cpu", weights_only=False)
+    
+    train_dataset = RendererDataset(data_v4, images_v4, "train")
+    val_dataset = RendererDataset(data_v4, images_v4, "val")
+    
+    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers=0)
+    val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False, num_workers=0)
     
     model = NeuralRendererV1(motion_dim=11).to(device)
-    optimizer = optim.Adam(model.parameters(), lr=1e-4)
+    optimizer = optim.Adam(model.parameters(), lr=learning_rate)
     loss_fn = nn.L1Loss()
     mse_fn = nn.MSELoss()
-    scaler = torch.amp.GradScaler(device='cuda') if device.type == 'cuda' else None
+    scaler = torch.amp.GradScaler(device='cuda')
     
     print("\n--- MODEL ARCHITECTURE ---")
-    print(model)
     total_params = sum(p.numel() for p in model.parameters())
     print(f"Total Parameters: {total_params:,}")
     
-    if is_smoke_test:
-        print("\n[ENVIRONMENT HALT] Aborting full training loop. Returning environment report.")
-        return
+    best_val_loss = float('inf')
+    
+    metrics = {
+        "train_loss": [],
+        "val_loss": [],
+        "val_psnr": [],
+        "epoch_times": []
+    }
+    
+    print("\nStarting Training...")
+    global_step = 0
+    for epoch in range(1, epochs + 1):
+        model.train()
+        epoch_start = time.time()
         
-    # Placeholder for full training loop
-    # for epoch in range(epochs):
-    #     for batch in dataloader:
-    #         with torch.amp.autocast(device_type='cuda'): ...
+        train_loss_accum = 0.0
+        for batch in train_loader:
+            ident = batch["identity_img"].to(device)
+            motion = batch["motion_vector"].to(device)
+            target = batch["target_img"].to(device)
+            
+            optimizer.zero_grad()
+            
+            with torch.amp.autocast(device_type='cuda'):
+                pred = model(ident, motion)
+                loss = loss_fn(pred, target)
+                
+            scaler.scale(loss).backward()
+            scaler.step(optimizer)
+            scaler.update()
+            
+            train_loss_accum += loss.item() * ident.size(0)
+            global_step += 1
+            
+        train_loss = train_loss_accum / len(train_dataset)
+        
+        # Validation
+        model.eval()
+        val_loss_accum = 0.0
+        val_mse_accum = 0.0
+        with torch.no_grad():
+            for batch in val_loader:
+                ident = batch["identity_img"].to(device)
+                motion = batch["motion_vector"].to(device)
+                target = batch["target_img"].to(device)
+                
+                with torch.amp.autocast(device_type='cuda'):
+                    pred = model(ident, motion)
+                    loss = loss_fn(pred, target)
+                    mse = mse_fn(pred, target)
+                    
+                val_loss_accum += loss.item() * ident.size(0)
+                val_mse_accum += mse.item() * ident.size(0)
+                
+        val_loss = val_loss_accum / len(val_dataset)
+        val_mse = val_mse_accum / len(val_dataset)
+        val_psnr = calculate_psnr(val_mse)
+        
+        epoch_time = time.time() - epoch_start
+        
+        metrics["train_loss"].append(train_loss)
+        metrics["val_loss"].append(val_loss)
+        metrics["val_psnr"].append(val_psnr)
+        metrics["epoch_times"].append(epoch_time)
+        
+        print(f"Epoch {epoch}/{epochs} | Time: {epoch_time:.2f}s | Train L1: {train_loss:.4f} | Val L1: {val_loss:.4f} | Val PSNR: {val_psnr:.2f}dB | Peak VRAM: {torch.cuda.max_memory_allocated(device)/1e9:.2f}GB")
+        
+        # Save checkpoints
+        ckpt_state = {
+            "epoch": epoch,
+            "global_step": global_step,
+            "model_state_dict": model.state_dict(),
+            "optimizer_state_dict": optimizer.state_dict(),
+            "val_loss": val_loss,
+            "val_psnr": val_psnr,
+            "config": {
+                "motion_dim": 11,
+                "resolution": 512,
+                "identity_policy": "first_frame"
+            }
+        }
+        
+        torch.save(ckpt_state, os.path.join(ckpt_dir, "neural_renderer_v1_gpu_latest.pt"))
+        if val_loss < best_val_loss:
+            best_val_loss = val_loss
+            torch.save(ckpt_state, os.path.join(ckpt_dir, "neural_renderer_v1_gpu_best.pt"))
+            print(f"  -> Saved new best checkpoint (Val L1: {best_val_loss:.4f})")
+            
+    # Save metrics
+    with open(os.path.join(base_dir, "artifacts", "renderer_v1_training_metrics.json"), "w") as f:
+        json.dump(metrics, f, indent=2)
+        
+    print("\nTraining Complete.")
+    print(f"Best Val L1: {best_val_loss:.4f}")
 
 if __name__ == "__main__":
     train_renderer_v1()

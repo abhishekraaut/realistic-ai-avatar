@@ -3,7 +3,7 @@ import torch
 import cv2
 
 def validate_renderer_dataset():
-    base_dir = r"C:\Users\iabhi\Downloads\Avtar-Project"
+    base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
     dataset_path = os.path.join(base_dir, "synthesia_training_data", "dataset_v4.pt")
     asset_dir = os.path.join(base_dir, "public", "assets")
     
