@@ -1,0 +1,18 @@
+{
+  "identity_id": "ID_002",
+  "sequence_id": "seq_01",
+  "source": "Wikimedia Commons",
+  "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/2015-12-05_President_Obama%27s_Weekly_Address.webm",
+  "license": "Public Domain / CC0",
+  "training_use_permission": true,
+  "native_fps": 25.0,
+  "target_fps": 25.0,
+  "width": 1280,
+  "height": 720,
+  "duration": 30.0,
+  "frame_count": 750,
+  "landmark_status": "SUCCESS",
+  "face_detection_status": "SUCCESS",
+  "v4_motion_status": "SUCCESS (OOD: 15)",
+  "preprocessing_version": "1.0"
+}

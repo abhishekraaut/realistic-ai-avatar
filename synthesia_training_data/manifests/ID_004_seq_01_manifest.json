@@ -1,0 +1,18 @@
+{
+  "identity_id": "ID_004",
+  "sequence_id": "seq_01",
+  "source": "Joe Biden Weekly Address",
+  "source_url": "https://commons.wikimedia.org/wiki/File:ID_004_Sample.webm",
+  "license": "Public Domain / CC0",
+  "training_use_permission": true,
+  "native_fps": 25.0,
+  "target_fps": 25.0,
+  "width": 1280,
+  "height": 720,
+  "duration": 32.0,
+  "frame_count": 800,
+  "landmark_status": "SUCCESS",
+  "face_detection_status": "SUCCESS",
+  "v4_motion_status": "SUCCESS (OOD: 25)",
+  "preprocessing_version": "1.0"
+}

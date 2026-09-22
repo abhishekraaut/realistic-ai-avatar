@@ -1,0 +1,18 @@
+{
+  "identity_id": "ID_005",
+  "sequence_id": "seq_01",
+  "source": "George W. Bush Address",
+  "source_url": "https://commons.wikimedia.org/wiki/File:ID_005_Sample.webm",
+  "license": "Public Domain / CC0",
+  "training_use_permission": true,
+  "native_fps": 25.0,
+  "target_fps": 25.0,
+  "width": 1280,
+  "height": 720,
+  "duration": 26.0,
+  "frame_count": 650,
+  "landmark_status": "SUCCESS",
+  "face_detection_status": "SUCCESS",
+  "v4_motion_status": "SUCCESS (OOD: 25)",
+  "preprocessing_version": "1.0"
+}
