@@ -1,9 +1,10 @@
-fastapi==0.109.2
-uvicorn==0.27.1
-livekit-api==0.5.1
-python-dotenv==1.0.1
+fastapi
+uvicorn
+livekit-api
+python-dotenv
 livekit-agents
 livekit-plugins-deepgram
 livekit-plugins-openai
 livekit-plugins-elevenlabs
 livekit-plugins-silero
+livekit-plugins-google
