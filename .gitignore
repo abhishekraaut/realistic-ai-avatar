@@ -59,3 +59,16 @@ artifacts/*.mp4
 artifacts/*.json
 *.pkl
 **/*.pkl
+# Project specific
+backend/training/checkpoints/*.pt
+synthesia_training_data/**/*.pt
+synthesia_training_data/**/frames/
+synthesia_training_data/**/motion_maps/
+synthesia_training_data/raw/
+synthesia_training_data/processed/
+artifacts/*.png
+artifacts/*.jpg
+artifacts/*.mp4
+artifacts/*.json
+*.pkl
+**/*.pkl
