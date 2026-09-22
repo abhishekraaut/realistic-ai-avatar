@@ -108,12 +108,20 @@ from .neural_renderer_v3 import NeuralRendererV3
 
 class NeuralRendererV3LiveKit:
     def __init__(self, checkpoint_path='backend/training/checkpoints/neural_renderer_v3_temporal_best.pt', width=512, height=512):
+        import os, logging
+        logger = logging.getLogger("neural-renderer")
+        if not os.path.exists(checkpoint_path):
+            logger.error(f"Neural checkpoint missing: {checkpoint_path}. Failing closed.")
+            raise FileNotFoundError(f"Missing checkpoint: {checkpoint_path}")
+            
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         self.model = NeuralRendererV3().to(self.device).eval()
         try:
             self.model.load_state_dict(torch.load(checkpoint_path, map_location=self.device, weights_only=True))
-        except:
-            pass # fallback if missing
+        except Exception as e:
+            logger.error(f"Failed to load V3 checkpoint: {e}. Failing closed.")
+            raise RuntimeError(f"Invalid neural checkpoint: {e}")
+            
         self.width = width
         self.height = height
         self.current_turn_id = -1
