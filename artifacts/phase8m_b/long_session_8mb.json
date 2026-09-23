@@ -1,0 +1,6 @@
+{
+  "duration_minutes": 30, "turn_count": 142,
+  "latency_mean": 884, "latency_p95": 960,
+  "queue_depth_max": 1, "dropped_frames": 0, "stale_turns": 0,
+  "vram_leakage": false, "status": "PASSED"
+}

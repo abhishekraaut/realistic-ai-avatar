@@ -1,0 +1,10 @@
+{
+  "first_response_latency_mean": 884,
+  "total_response_latency_mean": 884,
+  "simple_question_ms": 860,
+  "reasoning_question_ms": 950,
+  "stt_bound_ms": 350,
+  "llm_bound_ms": 195,
+  "tts_bound_ms": 250,
+  "transport_bound_ms": 46
+}

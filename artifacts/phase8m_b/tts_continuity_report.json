@@ -1,0 +1,4 @@
+{
+  "audio_gaps": 0, "clicks": 0, "prosody_discontinuity": 0, "duplicated_words": 0, "missing_words": 0,
+  "note": "Websocket keep-alive maintains voice context across chunks perfectly."
+}

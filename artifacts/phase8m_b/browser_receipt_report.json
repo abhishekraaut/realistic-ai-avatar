@@ -1,0 +1,5 @@
+{
+  "T12_publish": 838, "T13_webrtc_receipt": 884,
+  "T14_display_callback": "UNMEASURED (Requires DOM/Canvas instrumentation)",
+  "status": "Microphone-to-browser WebRTC receipt is ~884ms."
+}

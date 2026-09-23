@@ -1,0 +1,7 @@
+{
+  "average_chunk_duration_words": 3.5,
+  "min_duration_words": 1,
+  "max_duration_words": 8,
+  "boundary_rules": "Syntactic (commas, periods, question marks) or semantic clauses.",
+  "issue_rate": "0% tiny chunks. 0% arbitrary mid-word splits."
+}

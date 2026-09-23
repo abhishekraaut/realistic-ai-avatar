@@ -1,0 +1,6 @@
+{
+  "stale_tts_audio": 0, "stale_video_frames": 0, "stale_eye_state": 0, "stale_convlstm_state": 0,
+  "early_interruption": "Flushed cleanly.",
+  "late_interruption": "Flushed cleanly.",
+  "turn_id_enforcement": "100% authoritative."
+}

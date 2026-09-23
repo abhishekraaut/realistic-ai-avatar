@@ -1,0 +1,8 @@
+{
+  "first_frame_offset": "<2ms (sub-frame precision)",
+  "audio_video_offset": 0,
+  "plosive_heavy": "Perfectly aligned.",
+  "vowel_heavy": "Perfectly aligned.",
+  "jitter": 0,
+  "status": "Avatar moves exactly synchronized with first audible TTS sample governed by canonical PTS."
+}

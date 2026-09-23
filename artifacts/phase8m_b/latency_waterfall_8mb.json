@@ -1,0 +1,8 @@
+{
+  "T0_speech_start": 0, "T1_stt_partial": 20, "T2_stt_stable": 350,
+  "T3_gemini_start": 355, "T4_gemini_ttft": 515, "T5_gemini_phrase": 545,
+  "T6_tts_start": 550, "T7_tts_first_audio": 800, "T8_canonical_pts": 810,
+  "T9_v6_motion": 810, "T10_eye_state": 811, "T11_renderer_ready": 835,
+  "T12_livekit_publish": 838, "T13_browser_webrtc": 884,
+  "metrics": {"total_latency_ms": 884}
+}

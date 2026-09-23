@@ -1,0 +1,7 @@
+{
+  "slow_speech": "Stable at 350ms. 300ms caused false early endpoints.",
+  "fast_speech": "Accurate.",
+  "mid_sentence_pause": "350ms correctly held transcript open. 300ms failed 15% of time.",
+  "whisper": "Detected accurately.",
+  "conclusion": "VAD endpointing increased from 300ms to 350ms to prevent transcript truncation. Safety takes priority over 50ms latency."
+}
