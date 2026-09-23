@@ -1,0 +1,9 @@
+{
+  "active_session": "Session_A",
+  "concurrent_requests_injected": 100,
+  "concurrent_requests_rejected": 100,
+  "session_A_fps": 25,
+  "session_A_renderer_latency_ms": 17.5,
+  "session_A_queue_growth": 0,
+  "vram_growth_mb": 0
+}

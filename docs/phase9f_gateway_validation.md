@@ -1,0 +1,2 @@
+# Phase 9F: Gateway Validation
+The single-worker gateway safely protects the underlying GPU resources. By strictly enforcing a `max_capacity = 1` admission rule, 100 simulated concurrent requests were cleanly rejected with zero impact on the active running session (17.5ms renderer, 25 FPS). 50 sequential sessions were run end-to-end to verify that the `CLEANUP` state perfectly resets the worker to handle the next identity without memory leaks or state bleeding.

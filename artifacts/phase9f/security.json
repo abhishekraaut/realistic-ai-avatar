@@ -1,0 +1,7 @@
+{
+  "auth_boundary": "Enforced",
+  "secrets_externalized": true,
+  "cors_rules": "Strict",
+  "stack_traces_hidden": true,
+  "gpu_secrets_hidden": true
+}

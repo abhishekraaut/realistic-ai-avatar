@@ -1,0 +1,5 @@
+{
+  "STT_disconnect": "Session cleanup triggered, active_sessions -> 0, next session admitted.",
+  "LiveKit_disconnect": "Session cleanup triggered, active_sessions -> 0, next session admitted.",
+  "worker_draining": "Session allowed to finish, active_sessions -> 0, worker -> STOPPED."
+}

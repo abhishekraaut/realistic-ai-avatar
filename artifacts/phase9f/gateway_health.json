@@ -1,0 +1,8 @@
+{
+  "worker_state": "WORKER_READY",
+  "active_sessions": 0,
+  "max_sessions": 1,
+  "gpu_utilization_pct": 0,
+  "vram_used_mb": 750,
+  "release_version": "v0.1.0-avatar-rc"
+}

@@ -1,0 +1,19 @@
+{
+  "states_verified": [
+    "REQUEST",
+    "ADMISSION",
+    "SESSION_CREATE",
+    "WORKER_ASSIGN",
+    "RUNNING",
+    "SESSION_END",
+    "CLEANUP",
+    "IDLE"
+  ],
+  "cleanup_verified": {
+    "convlstm_state": "Released",
+    "eye_scheduler_state": "Released",
+    "identity_reference": "Released",
+    "audio_video_buffers": "Flushed",
+    "livekit_state": "Released"
+  }
+}

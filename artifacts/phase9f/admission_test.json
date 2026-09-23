@@ -1,0 +1,6 @@
+{
+  "session_A": "ADMITTED",
+  "session_B_concurrent": "REJECTED (WORKER_BUSY)",
+  "active_sessions": 1,
+  "session_A_impact": "None"
+}
