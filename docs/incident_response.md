@@ -1,2 +1,2 @@
 # Incident Response
-Defines SEV-1 (Security, Stale Residual) through SEV-4 (Documentation) escalation paths and MTTR targets.
+Contains mapping of alerts (VRAM, Stale Residual, Gate Overlap, Latency) to runbooks and SEV levels.

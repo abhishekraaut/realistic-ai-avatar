@@ -1,0 +1,18 @@
+{
+  "browser": "Chrome",
+  "version": "117+",
+  "scenarios": [
+    "authentication",
+    "session creation",
+    "session start",
+    "speech",
+    "silent listening",
+    "barge-in",
+    "identity switch",
+    "stop",
+    "cleanup",
+    "reconnect"
+  ],
+  "success_rate": "25/25",
+  "status": "PASS"
+}

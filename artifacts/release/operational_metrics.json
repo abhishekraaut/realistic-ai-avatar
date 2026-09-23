@@ -1,0 +1,19 @@
+{
+  "slo_targets": {
+    "availability": "99.9% (TARGET)",
+    "renderer_latency_mean": "< 22ms (VALIDATED)",
+    "fps": ">= 25 (VALIDATED)",
+    "vram": "< 850MB (VALIDATED)",
+    "stale_residual": "0 (VALIDATED)",
+    "gate_overlap": "0 (VALIDATED)"
+  },
+  "measured_baselines": {
+    "renderer_mean_ms": 21.2,
+    "renderer_p95_ms": 21.8,
+    "renderer_p99_ms": 22.5,
+    "browser_T15_ms": 909,
+    "vram_mb": 792,
+    "mttd_s": 15,
+    "mttr_s": 255
+  }
+}

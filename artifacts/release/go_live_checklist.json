@@ -1,0 +1,18 @@
+{
+  "release_artifact_exact": true,
+  "model_hashes_exact": true,
+  "config_hash_exact": true,
+  "tests_pass": true,
+  "api_security_pass": true,
+  "client_acceptance_pass": true,
+  "browser_acceptance_pass": true,
+  "monitoring_active": true,
+  "alerts_tested": true,
+  "rollback_tested": true,
+  "disaster_recovery_tested": true,
+  "operator_runbook_tested": true,
+  "secrets_protected": true,
+  "repository_clean": true,
+  "capacity_documented": true,
+  "limitations_documented": true
+}
