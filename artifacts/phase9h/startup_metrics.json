@@ -1,0 +1,8 @@
+{
+  "process_startup_ms": 450,
+  "cuda_initialization_ms": 1200,
+  "checkpoint_load_ms": 2800,
+  "model_warmup_ms": 1500,
+  "readiness_transition_ms": 50,
+  "total_cold_start_ms": 6000
+}

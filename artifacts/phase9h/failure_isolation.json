@@ -1,0 +1,7 @@
+{
+  "worker_A_fail_during_session_B": {
+    "session_B_status": "Unaffected",
+    "gateway_action": "Worker A marked UNHEALTHY, routing blocked",
+    "migration": "NOT SUPPORTED"
+  }
+}

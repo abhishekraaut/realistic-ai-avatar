@@ -1,19 +1,18 @@
-# Horizontal Scaling Architecture
+# Horizontal Scaling Architecture (Updated)
 
 ```mermaid
 flowchart TD
-    C[Client] --> G[Gateway / Router]
-    G -- "Health/Heartbeat" --> W1[Worker 1: RTX 3050]
-    G -- "Health/Heartbeat" --> W2[Worker 2: RTX 3050]
-    G -- "Health/Heartbeat" --> WN[Worker N: RTX 4090]
+    C[Client Browser] --> G[Stateless Gateway]
+    G -- "Health & Capacity" --> W1[GPU Worker 1]
+    G -- "Health & Capacity" --> W2[GPU Worker 2]
     
     W1 --> L[LiveKit Cluster]
     W2 --> L
-    WN --> L
 ```
 
-## Worker Contract
-Each worker strictly isolates `active_sessions`. A worker broadcasts its `max_capacity` (e.g., 1 for RTX 3050) and its current `active_sessions`. The gateway routes purely on this deterministic mathematical availability, never on ambiguous queue states.
+## Admission Contract
+- `429 Too Many Requests`: Capacity/admission rejection (all workers full).
+- `503 Service Unavailable`: Worker/service unhealthy (no workers available).
 
-## Backpressure
-If no worker is `READY`, the Gateway returns an explicit HTTP 429/503 response. The system explicitly avoids infinite queuing.
+## Heartbeat Contract
+Workers emit heartbeats every 5 seconds. Gateways enforce a 15-second timeout before transitioning a worker to `UNHEALTHY`.

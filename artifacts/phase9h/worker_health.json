@@ -1,0 +1,9 @@
+{
+  "worker_id": "worker-bench-01",
+  "state": "READY",
+  "max_capacity": 1,
+  "active_sessions": 0,
+  "heartbeat_interval_s": 5,
+  "heartbeat_timeout_s": 15,
+  "admission_guard": "STRICT"
+}

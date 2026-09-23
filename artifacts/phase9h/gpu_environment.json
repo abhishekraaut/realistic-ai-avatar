@@ -1,0 +1,8 @@
+{
+  "gpu_name": "NVIDIA RTX 3050",
+  "vram_total_mb": 6144,
+  "vram_available_mb": 5394,
+  "cuda_version": "12.4",
+  "driver_version": "550.54.14",
+  "pytorch_cuda_available": true
+}

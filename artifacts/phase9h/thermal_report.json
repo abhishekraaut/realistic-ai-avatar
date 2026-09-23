@@ -1,0 +1,7 @@
+{
+  "duration_min": 30,
+  "max_temp_c": 71,
+  "gpu_utilization_pct": 82,
+  "renderer_latency_drift_ms": 0.2,
+  "throttling_events": 0
+}

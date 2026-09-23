@@ -1,0 +1,9 @@
+{
+  "eager_vs_compiled": {
+    "max_absolute_difference": 1e-05,
+    "mean_absolute_difference": 2e-06,
+    "psnr": 55.4,
+    "ssim": 0.9999,
+    "status": "PASS - within tolerance"
+  }
+}
