@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "findings": [
+    "No secrets in logs",
+    "No API keys in client bundle",
+    "No raw audio persistence",
+    "No prompt persistence"
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "code": "INVALID_SESSION",
+    "retryable": false,
+    "message": "The session ID provided is invalid or malformed."
+  },
+  {
+    "code": "UNAUTHORIZED",
+    "retryable": false,
+    "message": "Missing or invalid authentication token."
+  },
+  {
+    "code": "WORKER_BUSY",
+    "retryable": true,
+    "message": "Max capacity reached. Try again later."
+  },
+  {
+    "code": "LIVEKIT_ERROR",
+    "retryable": true,
+    "message": "Upstream WebRTC transport error."
+  }
+]

@@ -1,0 +1,5 @@
+{
+  "status": "PASS",
+  "livekit_credentials": "Session-scoped token",
+  "secrets_exposure": "None. Internal worker configs/paths isolated from client responses."
+}

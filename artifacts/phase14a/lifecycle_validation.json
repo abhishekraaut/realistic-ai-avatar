@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "transitions": [
+    "REQUESTED -> INITIALIZING -> READY -> SPEAKING <-> LISTENING"
+  ],
+  "safeguards": [
+    "CLOSED -> SPEAKING rejected",
+    "INTERRUPTED -> STALE TURN rejected"
+  ]
+}

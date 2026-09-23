@@ -1,0 +1,8 @@
+{
+  "CREATE_SESSION": "POST /v1/sessions - Auth required. Returns session_id, livekit_token.",
+  "START_SESSION": "POST /v1/sessions/{id}/start - Triggers WebRTC connection.",
+  "STOP_SESSION": "POST /v1/sessions/{id}/stop - Terminates connection and cleans up worker.",
+  "BARGE_IN": "POST /v1/sessions/{id}/interrupt - VAD triggered, clears stochastic residual latent state instantly.",
+  "IDENTITY_SWITCH": "POST /v1/sessions/{id}/identity - Switches reference image, flushes ConvLSTM/V6 state.",
+  "HEALTH": "GET /v1/health - Node health, worker states."
+}

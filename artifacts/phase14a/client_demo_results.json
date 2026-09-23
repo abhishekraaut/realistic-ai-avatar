@@ -1,0 +1,8 @@
+{
+  "sessions_run": 25,
+  "sessions_successful": 25,
+  "barge_in_tests": "Pass",
+  "identity_switch_tests": "Pass",
+  "visual_artifacts": "None",
+  "stale_residual_count": 0
+}
