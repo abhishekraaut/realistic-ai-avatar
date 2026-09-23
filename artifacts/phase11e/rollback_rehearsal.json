@@ -1,0 +1,5 @@
+{
+  "procedure": "Hot-switched config from stochastic_silent to disabled",
+  "result": "Clean return to V6 baseline. No stale latent state.",
+  "performance_degradation": false
+}

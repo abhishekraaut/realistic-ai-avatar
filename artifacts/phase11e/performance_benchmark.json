@@ -1,0 +1,15 @@
+{
+  "V6_V9_baseline": {
+    "p95_ms": 18.7,
+    "fps": 25,
+    "vram_mb": 750,
+    "T15_ms": 908
+  },
+  "V6_Residual_V9": {
+    "p95_ms": 19.5,
+    "fps": 25,
+    "vram_mb": 785,
+    "T15_ms": 909
+  },
+  "status": "Safe. Budget maintained."
+}

@@ -1,0 +1,10 @@
+{
+  "total_tested": 10,
+  "difficult_cases": [
+    "glasses",
+    "long_hair",
+    "bald",
+    "collars"
+  ],
+  "instability_detected": false
+}

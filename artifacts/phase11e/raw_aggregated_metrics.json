@@ -1,0 +1,8 @@
+{
+  "average_silence_duration_s": 4.2,
+  "residual_activation_count": 312,
+  "residual_rms": 0.05,
+  "residual_max_magnitude": 0.15,
+  "stale_residual_count": 0,
+  "resets": 45
+}

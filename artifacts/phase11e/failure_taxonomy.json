@@ -1,0 +1,12 @@
+{
+  "critical_failures": 0,
+  "minor_issues": [
+    {
+      "type": "F. transition artifact",
+      "description": "Very slight 1-2 frame overlap of residual ramp-down during extremely abrupt sub-100ms barge-ins. Not visually destructive.",
+      "severity": "Low",
+      "reproducible": true
+    }
+  ],
+  "session_issue_rate": 0.05
+}
