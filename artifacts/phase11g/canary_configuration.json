@@ -1,0 +1,7 @@
+{
+  "state": "CANARY",
+  "assignment_percentage": 10,
+  "assignment_method": "Deterministic hash of session_id",
+  "canary_mode": "stochastic_silent",
+  "baseline_mode": "disabled"
+}

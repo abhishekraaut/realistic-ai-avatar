@@ -1,0 +1,15 @@
+{
+  "baseline": {
+    "latency_p95_ms": 18.7,
+    "latency_p99_ms": 19.1,
+    "vram_mb": 750,
+    "fps": 25
+  },
+  "canary": {
+    "latency_p95_ms": 19.5,
+    "latency_p99_ms": 20.2,
+    "vram_mb": 785,
+    "fps": 25
+  },
+  "conclusion": "No material regression. 25 FPS sustained."
+}

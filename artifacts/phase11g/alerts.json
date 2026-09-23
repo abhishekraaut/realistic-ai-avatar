@@ -1,0 +1,9 @@
+{
+  "triggered_naturally": 0,
+  "triggered_intentionally": 2,
+  "intentional_alerts": [
+    "VRAM_growth (synthetic test)",
+    "Stale_residual (synthetic test)"
+  ],
+  "cleared_successfully": true
+}

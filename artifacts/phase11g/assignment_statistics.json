@@ -1,0 +1,6 @@
+{
+  "total_sessions": 250,
+  "baseline_sessions": 225,
+  "canary_sessions": 25,
+  "assignment_integrity": "Pass"
+}

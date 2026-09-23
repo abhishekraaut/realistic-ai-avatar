@@ -1,0 +1,6 @@
+{
+  "checkpoint_unavailable": "Fail closed safely",
+  "vad_interrupt_during_residual": "Instant reset (stale=0)",
+  "livekit_reconnect": "State cleared",
+  "identity_reinit": "State cleared"
+}

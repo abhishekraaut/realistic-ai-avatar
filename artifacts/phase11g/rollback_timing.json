@@ -1,0 +1,8 @@
+{
+  "T0_command": 0,
+  "T2_state_cleared": 2,
+  "T3_next_frame_v6": 8,
+  "T4_visible_baseline": 48,
+  "total_rollback_time_ms": 8,
+  "status": "Instant hot-switch successful"
+}

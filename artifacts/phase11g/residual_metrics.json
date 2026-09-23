@@ -1,0 +1,8 @@
+{
+  "activations": 1420,
+  "average_duration_ms": 3200,
+  "clamp_count": 0,
+  "gate_overlap_count": 0,
+  "stale_residual_count": 0,
+  "reset_count": 412
+}

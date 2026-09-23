@@ -1,0 +1,8 @@
+{
+  "duration_hours": 4.5,
+  "turns": 520,
+  "memory_growth": false,
+  "queue_accumulation": false,
+  "max_vram_mb": 788,
+  "stale_state_count": 0
+}
