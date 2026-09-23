@@ -1,0 +1,22 @@
+{
+  "PROFILE_A_DevDemo": {
+    "gpu": "RTX 3050 6GB",
+    "max_sessions": 1,
+    "status": "MEASURED"
+  },
+  "PROFILE_B_ProdSingle": {
+    "gpu": "RTX 4070 12GB",
+    "max_sessions": 2,
+    "status": "ESTIMATED"
+  },
+  "PROFILE_C_SmallDeploy": {
+    "gpu": "RTX 4080 16GB",
+    "max_sessions": 4,
+    "status": "ESTIMATED"
+  },
+  "PROFILE_D_ScaleOut": {
+    "gpu": "Multi-Node RTX 4090",
+    "max_sessions": "N*8",
+    "status": "ESTIMATED"
+  }
+}

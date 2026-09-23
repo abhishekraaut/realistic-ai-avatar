@@ -1,0 +1,5 @@
+{
+  "vram_scaling": "Linear (+750MB per session)",
+  "compute_scaling": "Compute-bound. Utilization scales non-linearly near saturation.",
+  "bottleneck_analysis": "The system is strictly compute-bound on the RTX 3050, saturating CUDA cores before VRAM limits are reached."
+}

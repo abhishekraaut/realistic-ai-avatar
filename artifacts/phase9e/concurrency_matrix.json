@@ -1,0 +1,34 @@
+[
+  {
+    "gpu": "RTX 3050 6GB",
+    "sessions": 1,
+    "vram_reserved_mb": 750,
+    "fps": 25,
+    "result": "SUPPORTED",
+    "type": "MEASURED"
+  },
+  {
+    "gpu": "RTX 3050 6GB",
+    "sessions": 2,
+    "vram_reserved_mb": 1500,
+    "fps": 19,
+    "result": "UNSAFE (Compute Starvation)",
+    "type": "MEASURED"
+  },
+  {
+    "gpu": "RTX 4080 16GB",
+    "sessions": 4,
+    "vram_reserved_mb": 3000,
+    "fps": 25,
+    "result": "SUPPORTED",
+    "type": "ESTIMATED"
+  },
+  {
+    "gpu": "RTX 4090 24GB",
+    "sessions": 8,
+    "vram_reserved_mb": 6000,
+    "fps": 25,
+    "result": "SUPPORTED",
+    "type": "ESTIMATED"
+  }
+]

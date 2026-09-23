@@ -1,0 +1,27 @@
+{
+  "gpu_model": "NVIDIA RTX 3050",
+  "vram_gb": 6,
+  "1_session": {
+    "gpu_utilization_pct": 82,
+    "renderer_latency_ms": 17.5,
+    "complete_generation_latency_ms": 32.0,
+    "fps": 25,
+    "queue_depth": 2,
+    "vram_allocated_mb": 510,
+    "vram_reserved_mb": 750,
+    "temperature_c": 71
+  },
+  "2_sessions": {
+    "gpu_utilization_pct": 99,
+    "renderer_latency_ms": 34.5,
+    "complete_generation_latency_ms": 55.0,
+    "fps": 19,
+    "queue_depth": 5,
+    "vram_allocated_mb": 1020,
+    "vram_reserved_mb": 1500,
+    "temperature_c": 82,
+    "missed_deadlines": 180,
+    "dropped_frames": 180,
+    "thermal_behavior": "Throttling"
+  }
+}

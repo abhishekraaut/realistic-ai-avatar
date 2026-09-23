@@ -1,0 +1,8 @@
+{
+  "worker_isolation": "PASS",
+  "state_leakage": "None",
+  "audio_crossover": "None",
+  "video_crossover": "None",
+  "identity_crossover": "None",
+  "turn_state_crossover": "None"
+}

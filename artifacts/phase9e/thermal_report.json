@@ -1,0 +1,16 @@
+{
+  "RTX_3050_6GB": {
+    "1_session_30_min": {
+      "max_temp_c": 71,
+      "avg_temp_c": 68,
+      "utilization_pct": 82,
+      "throttling_events": 0
+    },
+    "2_session_30_min": {
+      "max_temp_c": 82,
+      "avg_temp_c": 81,
+      "utilization_pct": 99,
+      "throttling_events": 14
+    }
+  }
+}
