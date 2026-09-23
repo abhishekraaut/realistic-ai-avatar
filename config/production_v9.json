@@ -1,0 +1,13 @@
+{
+  "renderer_mode": "v9_spatial",
+  "resolution": "1280x720",
+  "fps": 25,
+  "motion": "V6_15D",
+  "eye": "stabilized_eye_scheduler",
+  "runtime": [
+    "FP16",
+    "channels_last",
+    "torch.compile"
+  ],
+  "mask": "identity-reference runtime spatial warp"
+}
