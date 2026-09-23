@@ -1,0 +1,18 @@
+{
+  "yaw_25_30": {
+    "V8_artifact_rate": 0.05,
+    "V9_artifact_rate": 0.01
+  },
+  "yaw_30_35": {
+    "V8_artifact_rate": 0.18,
+    "V9_artifact_rate": 0.04
+  },
+  "yaw_35_40": {
+    "V8_artifact_rate": 0.62,
+    "V9_artifact_rate": 0.18
+  },
+  "yaw_gt_40": {
+    "V8_artifact_rate": 0.85,
+    "V9_artifact_rate": 0.28
+  }
+}

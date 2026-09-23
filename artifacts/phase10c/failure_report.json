@@ -1,0 +1,4 @@
+{
+  "mask_generation_fail": "Handled cleanly. Session resets.",
+  "missing_identity_reference": "Fails closed cleanly. V9 requires identity reference mask."
+}

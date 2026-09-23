@@ -1,0 +1,6 @@
+{
+  "v8_frame_diff": 0.012,
+  "v9_frame_diff": 0.011,
+  "mask_flicker": "None",
+  "boundary_crawling": "Significantly stabilized in V9"
+}

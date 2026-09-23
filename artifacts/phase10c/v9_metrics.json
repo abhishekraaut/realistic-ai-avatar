@@ -1,0 +1,15 @@
+{
+  "model": "V9_Spatial_Runtime_Mask",
+  "standard_pose": {
+    "face_psnr": 34.6,
+    "mouth_psnr": 32.2,
+    "eyes_psnr": 33.5,
+    "hair_psnr": 31.8,
+    "neck_psnr": 32.4
+  },
+  "extreme_yaw_gt_35": {
+    "neck_artifact_rate": 0.18,
+    "shoulder_artifact_rate": 0.15,
+    "background_leakage": 0.09
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "decision": "CASE A",
+  "reason": "V9 clearly improves boundary robustness with no material regression.",
+  "action": "Promote V9 to default renderer_mode. Retain V8 for rollback.",
+  "rollback_command": "renderer_mode='v8_production'"
+}

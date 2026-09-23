@@ -1,0 +1,15 @@
+{
+  "model": "V8_Production",
+  "standard_pose": {
+    "face_psnr": 34.5,
+    "mouth_psnr": 32.1,
+    "eyes_psnr": 33.4,
+    "hair_psnr": 29.5,
+    "neck_psnr": 28.1
+  },
+  "extreme_yaw_gt_35": {
+    "neck_artifact_rate": 0.62,
+    "shoulder_artifact_rate": 0.45,
+    "background_leakage": 0.38
+  }
+}

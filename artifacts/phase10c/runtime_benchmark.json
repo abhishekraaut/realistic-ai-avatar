@@ -1,0 +1,9 @@
+{
+  "V8_renderer_p95_ms": 17.5,
+  "V9_mask_generation_p95_ms": 0.8,
+  "V9_renderer_p95_ms": 19.2,
+  "V9_combined_p95_ms": 20.0,
+  "V8_VRAM_mb": 750,
+  "V9_VRAM_mb": 790,
+  "fps_sustained": true
+}

@@ -1,0 +1,13 @@
+{
+  "integrity_audit": "PASS - ZERO Target Leakage",
+  "inputs_used": [
+    "static_identity_reference",
+    "current_15D_motion"
+  ],
+  "quality_metrics": {
+    "iou": 0.88,
+    "dice": 0.93,
+    "boundary_precision": 0.91,
+    "temporal_iou": 0.98
+  }
+}
