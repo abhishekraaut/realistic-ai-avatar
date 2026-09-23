@@ -1,0 +1,6 @@
+{
+  "secrets_committed": false,
+  "raw_audio_logged": false,
+  "telemetry_clean": true,
+  "dataset_leak": false
+}

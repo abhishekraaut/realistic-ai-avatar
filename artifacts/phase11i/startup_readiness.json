@@ -1,0 +1,7 @@
+{
+  "clean_room_boot": "Pass",
+  "checkpoint_discovery": "Pass",
+  "fail_closed_validation": "Pass",
+  "livekit_readiness": "Pass",
+  "browser_connectivity": "Pass"
+}

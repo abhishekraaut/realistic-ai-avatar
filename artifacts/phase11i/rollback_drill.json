@@ -1,0 +1,7 @@
+{
+  "command_propagation_ms": 1,
+  "residual_state_clear_ms": 4,
+  "next_frame_visible_ms": 41,
+  "total_rollback_time_ms": 46,
+  "status": "Pass"
+}
