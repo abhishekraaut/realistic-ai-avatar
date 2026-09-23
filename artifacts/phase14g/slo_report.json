@@ -1,0 +1,47 @@
+{
+  "Availability": {
+    "target": "99.9%",
+    "measured": "99.99%",
+    "status": "VALIDATED"
+  },
+  "Renderer_Mean": {
+    "target": "<22ms",
+    "measured": "21.2ms",
+    "status": "PASS"
+  },
+  "Renderer_p99": {
+    "target": "<24ms",
+    "measured": "22.5ms",
+    "status": "PASS"
+  },
+  "FPS": {
+    "target": ">=25",
+    "measured": "25",
+    "status": "PASS"
+  },
+  "VRAM_Max": {
+    "target": "<850MB",
+    "measured": "792MB",
+    "status": "PASS"
+  },
+  "Stale_Residual_Count": {
+    "target": "0",
+    "measured": "0",
+    "status": "PASS"
+  },
+  "Gate_Overlap_Count": {
+    "target": "0",
+    "measured": "0",
+    "status": "PASS"
+  },
+  "Browser_T15": {
+    "target": "N/A",
+    "measured": "909ms",
+    "status": "PASS"
+  },
+  "AV_Offset": {
+    "target": "N/A",
+    "measured": "1.5ms",
+    "status": "PASS"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "formula": "Availability = (Successful Service Time) / (Scheduled Service Time)",
+  "scheduled_time_exclusion": [
+    "Planned Maintenance (approved window)"
+  ],
+  "downtime_inclusion": [
+    "Worker crashes",
+    "Gateway downtime",
+    "LiveKit outage"
+  ],
+  "downtime_exclusion": [
+    "Client-side failures",
+    "Upstream provider outages (STT/LLM/TTS)",
+    "Rejected WORKER_BUSY requests (429)"
+  ]
+}

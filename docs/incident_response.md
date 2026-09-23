@@ -1,2 +1,2 @@
 # Incident Response
-Contains mapping of alerts (VRAM, Stale Residual, Gate Overlap, Latency) to runbooks and SEV levels.
+Error budget tracking indicates healthy consumption (9.8%). Single worker crash recovered within the baseline 4m12s threshold.

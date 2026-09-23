@@ -1,0 +1,7 @@
+{
+  "slo_target_percent": 99.9,
+  "allowed_downtime_minutes": 43.2,
+  "observed_downtime_minutes": 4.25,
+  "remaining_budget_minutes": 38.95,
+  "budget_consumed_percent": 9.8
+}

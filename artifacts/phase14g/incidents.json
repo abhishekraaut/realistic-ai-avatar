@@ -1,0 +1,16 @@
+{
+  "total_incidents": 1,
+  "details": [
+    {
+      "timestamp": "2026-09-02T14:30:00Z",
+      "service": "Worker",
+      "session_impact": "1 session dropped cleanly",
+      "severity": "SEV-2",
+      "mttd": "15s",
+      "mttr": "4m15s",
+      "root_cause": "OS-level memory eviction anomaly",
+      "slo_impact_minutes": 4.25
+    }
+  ],
+  "false_positives": 0
+}
