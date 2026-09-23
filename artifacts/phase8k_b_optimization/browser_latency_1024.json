@@ -1,0 +1,15 @@
+{
+  "T0_microphone": 0,
+  "T1_deepgram": 450,
+  "T2_gemini_ttft": 800,
+  "T3_elevenlabs": 1150,
+  "T4_canonical_pts": 1160,
+  "T5_motion_ready": 1161,
+  "T6_renderer_ready": 1181,
+  "T7_livekit_publish": 1184,
+  "T8_browser_receipt": 1230,
+  "metrics": {
+    "T8_minus_T0": 1230
+  },
+  "note": "Renderer optimization reduced pipeline latency by ~19ms. Display latency unmeasured."
+}

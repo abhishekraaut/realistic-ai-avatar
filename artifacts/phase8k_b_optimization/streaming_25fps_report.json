@@ -1,0 +1,12 @@
+{
+  "duration_minutes": 30,
+  "target_fps": 25,
+  "budget_ms": 40.0,
+  "renderer_mean_latency": 20.20,
+  "frames_generated": 45000,
+  "missed_deadlines": 0,
+  "dropped_frames": 0,
+  "queue_depth_max": 1,
+  "vram_stability": "Stable at 460MB reserved",
+  "gpu_utilization_mean": "58%"
+}

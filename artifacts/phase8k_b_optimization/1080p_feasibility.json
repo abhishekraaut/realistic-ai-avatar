@@ -1,0 +1,15 @@
+{
+  "target_resolution": "1920x1080",
+  "pixel_ratio_vs_1024": 1.98,
+  "forward_pass_empirical": {
+    "latency_ms": 41.5,
+    "allocated_vram_mb": 850.0,
+    "reserved_vram_mb": 1100.0,
+    "status": "Successful execution. Fails 25FPS real-time threshold (40ms budget) even with torch.compile."
+  },
+  "training_estimate": {
+    "expected_vram_gb": 11.5,
+    "hardware_limit": 6.0,
+    "status": "Will definitively OOM the RTX 3050 6GB. Training mathematically impossible on current hardware."
+  }
+}

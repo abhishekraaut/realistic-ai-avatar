@@ -1,0 +1,10 @@
+{
+  "total_allocated_mb": 285.5,
+  "breakdown": {
+    "encoder_activations": "15%",
+    "unet_feature_maps": "45%",
+    "convlstm_state": "25%",
+    "film_features": "5%",
+    "output_tensors": "10%"
+  }
+}

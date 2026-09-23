@@ -1,0 +1,7 @@
+{
+  "baseline_fp32": {"renderer_latency_mean": 38.87, "vram_mb": 605.0},
+  "opt_a_fp16": {"renderer_latency_mean": 30.50, "vram_mb": 420.0, "quality_regression": "None"},
+  "opt_b_channels_last": {"renderer_latency_mean": 24.55, "vram_mb": 415.0, "quality_regression": "None"},
+  "opt_c_torch_compile": {"renderer_latency_mean": 20.20, "vram_mb": 460.0, "compilation_time_sec": 115, "quality_regression": "None"},
+  "opt_d_tensorrt": {"status": "Skipped - Environment toolchain failure"}
+}

@@ -1,0 +1,11 @@
+{
+  "hardware": "RTX 3050 6GB",
+  "baseline_1024": {
+    "v6_motion": {"mean": 0.32, "p99": 0.52},
+    "eye_scheduler": {"mean": 0.05, "p99": 0.08},
+    "renderer_1024": {"mean": 38.87, "p99": 42.70},
+    "livekit_publish": {"mean": 2.10, "p99": 3.50},
+    "allocated_vram_mb": 420.0,
+    "reserved_vram_mb": 605.0
+  }
+}

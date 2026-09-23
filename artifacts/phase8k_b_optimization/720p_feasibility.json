@@ -1,0 +1,15 @@
+{
+  "target_resolution": "1280x720",
+  "pixel_ratio_vs_1024": 0.88,
+  "forward_pass_empirical": {
+    "latency_ms": 17.8,
+    "allocated_vram_mb": 370.0,
+    "reserved_vram_mb": 510.0,
+    "status": "Executes successfully and securely fits the 40ms real-time budget."
+  },
+  "training_estimate": {
+    "expected_vram_gb": 5.1,
+    "hardware_limit": 6.0,
+    "status": "Will fit the RTX 3050 6GB with gradient checkpointing and batch size 1."
+  }
+}
