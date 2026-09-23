@@ -1,0 +1,14 @@
+{
+  "architecture": "NeuralRendererV4Eye (Identical to V4Eye)",
+  "checkpoint_out": "backend/training/checkpoints/neural_renderer_v5_multienv_10id_best.pt",
+  "batch_size": 2,
+  "gradient_accumulation": 4,
+  "optimizer": "AdamW (lr=2e-4)",
+  "loss_weights": {
+    "l1": 1.0,
+    "temporal": 0.5,
+    "perceptual_vgg_relu22_relu33": 0.1
+  },
+  "training_vram_peak": "4.2 GB",
+  "epochs": 150
+}
