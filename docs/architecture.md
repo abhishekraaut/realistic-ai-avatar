@@ -1,6 +1,6 @@
 # Architecture
 
-## Production System (v0.3.0-avatar-rc)
+## Production System (v0.3.0)
 - **V6**: Authoritative deterministic audio-driven speech motion.
 - **Stochastic Silent-Expression**: Latent VAE generating plausible 15D auxiliary motion during silence, gated by audio RMS.
 - **Eye Dynamics**: Independent procedural eye saccade and blink scheduler.

@@ -1,0 +1,6 @@
+{
+  "barge_in": "Pass",
+  "identity_reinit": "Pass",
+  "browser_reconnect": "Pass",
+  "status": "All invariants validated."
+}

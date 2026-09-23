@@ -1,0 +1,26 @@
+{
+  "renderer_latency_regression": {
+    "threshold": "> 30ms",
+    "reason": "Threatens 25 FPS budget (40ms total frame window)"
+  },
+  "fps_degradation": {
+    "threshold": "< 24 FPS",
+    "reason": "Noticeable visual stutter in browser client"
+  },
+  "vram_growth": {
+    "threshold": "> 850MB",
+    "reason": "Indicates memory leak on restricted 6GB GPU"
+  },
+  "queue_growth": {
+    "threshold": "> 5 frames",
+    "reason": "Indicates processing bottleneck or backlog"
+  },
+  "stale_residual": {
+    "threshold": "> 0",
+    "reason": "Barge-in/reset mechanism failed to purge latency buffers"
+  },
+  "gate_overlap": {
+    "threshold": "> 0",
+    "reason": "Speech and silent expression clashing, corrupting mouth articulation"
+  }
+}
