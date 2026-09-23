@@ -1,0 +1,62 @@
+{
+  "dataset_manifest": {
+    "total_identities": 5,
+    "total_sequences": 10,
+    "total_frames": 4096,
+    "total_duration_seconds": 163.84,
+    "resolution_distribution": {
+      "512x512": 1.0
+    },
+    "fps_distribution": {
+      "25": 1.0
+    },
+    "audio_availability": 1.0,
+    "landmark_coverage": 1.0,
+    "identity_split": {
+      "train": ["ID_001", "ID_003", "ID_004"],
+      "validation": ["ID_005"],
+      "test": ["ID_002"]
+    },
+    "sequence_split": {
+      "train": 6,
+      "validation": 2,
+      "test": 2
+    },
+    "lighting_variation": {
+      "diffuse_frontal": 1.0,
+      "directional": 0.0,
+      "colored": 0.0
+    },
+    "camera_angle_variation": {
+      "static_frontal": 1.0,
+      "dynamic": 0.0
+    },
+    "head_pose_variation": {
+      "yaw_range_degrees": [-25, 25],
+      "pitch_range_degrees": [-10, 15]
+    },
+    "facial_expression_variation": {
+      "neutral_talking": 0.95,
+      "slight_smile": 0.05,
+      "surprise_anger_sadness": 0.0
+    },
+    "mouth_articulation_variation": {
+      "closed": 0.15,
+      "small_medium_open": 0.75,
+      "lip_rounding": 0.09,
+      "wide_open_shout": 0.01,
+      "asymmetric": 0.0
+    },
+    "eye_blink_variation": {
+      "open": 0.95,
+      "closing_opening": 0.03,
+      "closed": 0.02
+    },
+    "gaze_variation": {
+      "yaw_correlated": 0.98,
+      "independent_saccade": 0.02,
+      "vertical": 0.0
+    }
+  },
+  "leakage_verification": "Passed. Strict identity segregation maintained."
+}
