@@ -1,0 +1,5 @@
+{
+  "double_stop": "200 OK (no-op)",
+  "double_start": "200 OK (no-op)",
+  "barge_in_after_closed": "404/400 handled safely without stale state"
+}

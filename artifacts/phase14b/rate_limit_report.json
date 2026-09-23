@@ -1,0 +1,5 @@
+{
+  "session_creation": "10/min per IP",
+  "barge_in": "50/sec per session",
+  "invalid_auth": "5/min per IP before block"
+}

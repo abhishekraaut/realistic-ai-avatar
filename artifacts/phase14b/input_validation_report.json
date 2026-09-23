@@ -1,0 +1,5 @@
+{
+  "malformed_json": "400 Bad Request, no stack trace",
+  "invalid_session_id": "400 Bad Request",
+  "large_payloads": "413 Payload Too Large"
+}

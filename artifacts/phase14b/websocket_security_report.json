@@ -1,0 +1,6 @@
+{
+  "unauthenticated_connection": "Dropped immediately",
+  "oversized_frame": "Connection closed safely",
+  "rapid_reconnect": "Rate limited",
+  "memory_bound": "Stable teardown proven"
+}

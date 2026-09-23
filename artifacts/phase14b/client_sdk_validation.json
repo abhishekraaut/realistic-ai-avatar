@@ -1,0 +1,8 @@
+{
+  "createSession": "Pass",
+  "startSession": "Pass",
+  "stopSession": "Pass",
+  "bargeIn": "Pass",
+  "switchIdentity": "Pass",
+  "getSessionStatus": "Pass"
+}

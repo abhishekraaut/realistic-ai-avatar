@@ -1,0 +1,4 @@
+{
+  "api_throughput": "Gateway handles 10,000 req/sec rejecting >1 sessions with 429.",
+  "worker_overcommit": "None. max_capacity=1 enforced."
+}

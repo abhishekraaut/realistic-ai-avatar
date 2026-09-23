@@ -1,0 +1,5 @@
+{
+  "browser_crash": "Session timeout after 30s. State released.",
+  "abandoned_session": "Reaped. V6/residual/LiveKit resources freed.",
+  "worker_failure": "Clean teardown."
+}

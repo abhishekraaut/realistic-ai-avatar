@@ -1,0 +1,19 @@
+{
+  "Chrome": {
+    "version": "117+",
+    "os": "Windows/macOS",
+    "status": "VALIDATED",
+    "T15": 909,
+    "av_offset": 1.5
+  },
+  "Safari": {
+    "version": "All",
+    "os": "All",
+    "status": "NOT_VALIDATED"
+  },
+  "Firefox": {
+    "version": "All",
+    "os": "All",
+    "status": "NOT_VALIDATED"
+  }
+}

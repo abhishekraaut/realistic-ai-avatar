@@ -1,0 +1,6 @@
+{
+  "invalid_token": "Rejected (401)",
+  "expired_token": "Rejected (401)",
+  "missing_token": "Rejected (401)",
+  "wrong_audience": "Rejected (403)"
+}

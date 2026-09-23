@@ -1,0 +1,6 @@
+{
+  "user_a_access_session_b": "Blocked (403)",
+  "user_b_access_session_a": "Blocked (403)",
+  "telemetry_leakage": "None",
+  "livekit_token_scoping": "Session-bound"
+}
