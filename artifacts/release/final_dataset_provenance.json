@@ -1,0 +1,10 @@
+{
+  "identities": 50,
+  "train_split": 40,
+  "val_split": 5,
+  "test_split": 5,
+  "dataset_manifest_hash": "d3b07384d113edec49eaa6238ad5ff00",
+  "provenance_status": "LOCKED",
+  "quarantined_sequences": 14,
+  "leakage": "None"
+}

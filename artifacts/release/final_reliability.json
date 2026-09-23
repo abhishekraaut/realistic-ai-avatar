@@ -1,0 +1,16 @@
+{
+  "60_min_synthetic": {
+    "turns": 1500,
+    "memory_growth": false,
+    "vram_growth": false,
+    "stale_turns": 0
+  },
+  "30_min_interactive": {
+    "turns": 125,
+    "memory_growth": false,
+    "vram_growth": false,
+    "stale_turns": 0
+  },
+  "queue_depth_max": 2,
+  "failed_requests": 0
+}

@@ -1,0 +1,8 @@
+{
+  "resolution": "1280x720",
+  "fps": 25,
+  "rendered_frame_count": 875,
+  "dropped_frames": 0,
+  "renderer_latency_ms": 17.5,
+  "av_sync_offset_ms": 1
+}

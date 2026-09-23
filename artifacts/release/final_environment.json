@@ -1,0 +1,10 @@
+{
+  "os": "Windows 11 / Ubuntu 22.04 LTS",
+  "python": "3.10.12",
+  "node": "18.17.0",
+  "npm": "9.6.7",
+  "pytorch": "2.2.0",
+  "cuda": "12.1",
+  "gpu": "NVIDIA RTX 3050 6GB",
+  "browser": "Chrome 122.0"
+}

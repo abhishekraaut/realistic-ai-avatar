@@ -1,0 +1,8 @@
+{
+  "git_secrets": "None",
+  "log_secrets": "None",
+  "env_ignored": true,
+  "debug_disabled": true,
+  "cors_documented": true,
+  "livekit_externalized": true
+}
