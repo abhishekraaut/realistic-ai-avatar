@@ -1,0 +1,6 @@
+{
+  "T10_to_T11_ms": 24,
+  "steady_state_ms": 17.5,
+  "warmup_penalty_ms": 6.5,
+  "status": "First-frame initialization consistently consumes 24ms, vs 17.5ms steady state. Left unchanged as instructed."
+}

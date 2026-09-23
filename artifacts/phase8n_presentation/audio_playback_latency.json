@@ -1,0 +1,6 @@
+{
+  "methodology": "Web Audio API AudioContext.getOutputTimestamp()",
+  "receipt_to_playback_ms": 21,
+  "audio_hardware_buffering_ms": 15,
+  "status": "Browser audio output latency adds ~21ms to WebRTC receipt."
+}

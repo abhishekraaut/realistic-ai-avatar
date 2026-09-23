@@ -1,0 +1,9 @@
+{
+  "presentation_time_offset_ms": 1,
+  "mean_offset_ms": 1.0,
+  "p50_offset_ms": 1.2,
+  "p95_offset_ms": 2.5,
+  "jitter": "1.5ms",
+  "systematic_drift": false,
+  "status": "Audio and video presentation are perfectly synchronized within 1-3ms tolerance."
+}

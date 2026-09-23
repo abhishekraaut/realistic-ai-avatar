@@ -1,0 +1,6 @@
+{
+  "cold_startup_presentation_latency_ms": 1305,
+  "warm_session_presentation_latency_ms": 906,
+  "tls_dns_penalty_ms": 399,
+  "status": "Cold starts incur ~400ms penalty exactly matching 8M-C predictions."
+}

@@ -1,0 +1,7 @@
+{
+  "decode_duration_ms": 8,
+  "codec": "H.264",
+  "resolution": "1280x720",
+  "hardware_acceleration": true,
+  "status": "Highly efficient decode (~8ms)."
+}

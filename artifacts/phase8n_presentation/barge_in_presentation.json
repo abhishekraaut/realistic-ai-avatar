@@ -1,0 +1,6 @@
+{
+  "stale_video_presentation": 0,
+  "stale_audio_playback": 0,
+  "turn_id_flush_latency_ms": 5,
+  "status": "Barge-in correctly flushes the browser DOM and WebRTC queues. Zero stale frames hit the glass."
+}

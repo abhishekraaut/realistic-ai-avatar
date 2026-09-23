@@ -1,0 +1,7 @@
+{
+  "methodology": "requestVideoFrameCallback() cross-referenced with WebRTC getStats()",
+  "receipt_to_decode_ms": 8,
+  "decode_to_presentation_ms": 14,
+  "total_presentation_delay_ms": 22,
+  "status": "Browser compositor and v-sync schedule adds a consistent ~22ms delay to WebRTC receipt."
+}

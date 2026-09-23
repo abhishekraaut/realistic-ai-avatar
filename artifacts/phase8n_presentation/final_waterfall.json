@@ -1,0 +1,24 @@
+{
+  "T0_speech_onset": 0,
+  "T1_stt_partial": 20,
+  "T2_stt_stable": 350,
+  "T3_gemini_start": 355,
+  "T4_gemini_first_token": 515,
+  "T5_gemini_phrase_ready": 545,
+  "T6_tts_start": 550,
+  "T7_tts_first_audio": 800,
+  "T8_canonical_pts": 810,
+  "T9_v6_motion": 810,
+  "T10_eye_state": 811,
+  "T11_renderer_frame_ready": 835,
+  "T12_livekit_publish": 838,
+  "T13_browser_webrtc_receipt": 884,
+  "T14_browser_decoded_video": 892,
+  "T15_browser_video_presentation": 906,
+  "T16_browser_audio_playback": 905,
+  "metrics": {
+    "T13_receipt_latency": 884,
+    "T15_user_perceived_video": 906,
+    "T16_user_perceived_audio": 905
+  }
+}

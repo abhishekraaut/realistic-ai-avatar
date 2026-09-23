@@ -1,0 +1,11 @@
+{
+  "duration_minutes": 30,
+  "turns": 125,
+  "latency_mean": 906,
+  "latency_p50": 904,
+  "latency_p95": 924,
+  "latency_max": 951,
+  "dropped_frames": 0,
+  "sync_drift": 0,
+  "queue_growth": false
+}
