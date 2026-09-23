@@ -1,0 +1,12 @@
+{
+  "frame_difference": "stable",
+  "landmark_velocity": "stable",
+  "jitter": "none",
+  "mouth_stability": "high",
+  "eye_stability": "high",
+  "head_stability": "high",
+  "hair_boundary_stability": "improved_over_10id",
+  "neck_boundary_stability": "improved_over_10id",
+  "boiling_detected": false,
+  "flicker_detected": false
+}

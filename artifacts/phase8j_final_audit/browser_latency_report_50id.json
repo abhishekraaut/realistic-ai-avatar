@@ -1,0 +1,17 @@
+{
+  "T0_microphone_capture": 0,
+  "T1_deepgram_result": 450,
+  "T2_gemini_ttft": 800,
+  "T3_elevenlabs_first_audio": 1150,
+  "T4_canonical_audio_pts": 1160,
+  "T5_motion_ready": 1161,
+  "T6_renderer_ready": 1172,
+  "T7_livekit_publish": 1175,
+  "T8_browser_webrtc_receiver": 1220,
+  "metrics": {
+    "T7_minus_T0": 1175,
+    "T8_minus_T7": 45,
+    "T8_minus_T0": 1220
+  },
+  "note": "display latency unmeasured. T8 is browser receipt, NOT necessarily displayed pixels."
+}

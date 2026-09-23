@@ -1,0 +1,15 @@
+{
+  "total_frames_evaluated": 15000,
+  "artifact_categories": {
+    "neck_tearing": {"10-ID_rate": 0.60, "50-ID_rate": 0.04, "absolute_reduction": 0.56, "relative_reduction": "93.3%"},
+    "shoulder_warping": {"10-ID_rate": 0.65, "50-ID_rate": 0.05, "absolute_reduction": 0.60, "relative_reduction": "92.3%"},
+    "hair_boundary_smear": {"10-ID_rate": 0.40, "50-ID_rate": 0.08, "absolute_reduction": 0.32, "relative_reduction": "80.0%"},
+    "background_leakage": {"10-ID_rate": 0.55, "50-ID_rate": 0.01, "absolute_reduction": 0.54, "relative_reduction": "98.1%"},
+    "jaw_neck_mismatch": {"10-ID_rate": 0.50, "50-ID_rate": 0.03, "absolute_reduction": 0.47, "relative_reduction": "94.0%"}
+  },
+  "extreme_yaw_stress_test": {
+    "25_to_30_degrees": {"artifact_frequency": 0.02},
+    "30_to_35_degrees": {"artifact_frequency": 0.15},
+    "greater_than_35_degrees": {"artifact_frequency": 0.45}
+  }
+}

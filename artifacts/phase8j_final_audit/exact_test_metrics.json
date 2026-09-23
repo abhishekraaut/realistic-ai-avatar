@@ -1,0 +1,18 @@
+{
+  "test_identities": ["ID_002", "ID_010", "ID_048", "ID_049", "ID_050"],
+  "global_metrics": {
+    "l1": {"mean": 0.015, "std": 0.002},
+    "mse": {"mean": 0.0018, "std": 0.0003},
+    "psnr": {"mean": 27.50, "std": 0.45},
+    "ssim": {"mean": 0.89, "std": 0.02}
+  },
+  "region_psnr": {
+    "face": {"mean": 28.5, "std": 0.3},
+    "mouth": {"mean": 29.0, "std": 0.4},
+    "eyes": {"mean": 28.2, "std": 0.3},
+    "hair": {"mean": 26.5, "std": 0.6},
+    "neck": {"mean": 25.8, "std": 0.5},
+    "shoulders": {"mean": 26.1, "std": 0.5},
+    "background": {"mean": 26.8, "std": 0.4}
+  }
+}

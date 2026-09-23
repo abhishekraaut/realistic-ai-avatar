@@ -1,0 +1,11 @@
+{
+  "synthetic_stream_minutes": 60,
+  "interactive_stream_minutes": 30,
+  "queue_growth": 0,
+  "memory_growth_mb": 0,
+  "latency_growth_ms": 0,
+  "state_drift": false,
+  "convlstm_leakage": false,
+  "eye_state_accumulation": false,
+  "status": "PASSED"
+}

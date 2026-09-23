@@ -1,0 +1,11 @@
+{
+  "blink_closure": "preserved",
+  "reopening": "preserved",
+  "horizontal_gaze": "preserved",
+  "squint": "preserved",
+  "eye_sharpness": "preserved",
+  "eyelash_continuity": "preserved",
+  "stochastic_blink_behavior": "preserved",
+  "double_blink_guard": "preserved",
+  "regression_detected": false
+}

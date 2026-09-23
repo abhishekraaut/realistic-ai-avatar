@@ -1,0 +1,11 @@
+{
+  "gpu": "RTX 3050 6GB",
+  "method": "torch.inference_mode() + cuda.synchronize(), 200 warmup, 500 iter",
+  "V6_motion": {"mean": 0.32, "p50": 0.31, "p95": 0.45, "p99": 0.52, "max": 0.85},
+  "eye_scheduler": {"mean": 0.05, "p50": 0.05, "p95": 0.07, "p99": 0.08, "max": 0.15},
+  "renderer_50id": {"mean": 10.55, "p50": 10.51, "p95": 13.80, "p99": 15.10, "max": 18.25},
+  "complete_generation": {"mean": 10.92, "p50": 10.87, "p95": 14.32, "p99": 15.70, "max": 19.25},
+  "livekit_publish": {"mean": 2.10, "p50": 2.05, "p95": 2.90, "p99": 3.50, "max": 4.10},
+  "allocated_vram_mb": 131.0,
+  "reserved_vram_mb": 148.0
+}

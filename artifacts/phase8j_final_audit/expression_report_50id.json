@@ -1,0 +1,8 @@
+{
+  "neutral": {"mouth_reconstruction": "excellent", "identity_preservation": "stable"},
+  "smile": {"mouth_reconstruction": "excellent", "identity_preservation": "stable", "cheek_movement": "accurate"},
+  "lowered_sad": {"mouth_reconstruction": "good", "identity_preservation": "stable"},
+  "shouting": {"mouth_reconstruction": "good", "identity_preservation": "stable", "lip_rounding": "accurate"},
+  "strong_articulation": {"mouth_reconstruction": "excellent", "identity_preservation": "stable"},
+  "asymmetric": {"mouth_reconstruction": "good", "identity_preservation": "stable", "cheek_movement": "asymmetric_tracked"}
+}

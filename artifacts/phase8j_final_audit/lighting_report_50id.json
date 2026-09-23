@@ -1,0 +1,6 @@
+{
+  "diffuse_frontal": {"skin_tone": "consistent", "background_leakage": "none", "facial_highlight": "stable"},
+  "directional_indoor": {"skin_tone": "consistent", "background_leakage": "none", "facial_highlight": "accurate_to_reference"},
+  "outdoor_daylight": {"skin_tone": "consistent", "background_leakage": "none", "facial_highlight": "accurate_to_reference"},
+  "colored_lighting": {"skin_tone": "tint_preserved", "background_leakage": "none", "facial_highlight": "stable"}
+}
