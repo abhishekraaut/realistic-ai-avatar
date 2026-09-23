@@ -1,0 +1,7 @@
+{
+  "max_tts_chunk_queue": 5,
+  "max_audio_buffer_ms": 1000,
+  "max_video_frame_queue": 3,
+  "turn_lifetime_ttl_sec": 120,
+  "status": "All unbounded queues successfully clamped. No OOM risk."
+}

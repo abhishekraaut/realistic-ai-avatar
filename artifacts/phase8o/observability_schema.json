@@ -1,0 +1,12 @@
+{
+  "schema": "JSON structured logs",
+  "events": [
+    "turn_start",
+    "turn_cancel",
+    "api_start",
+    "api_fail",
+    "media_publish",
+    "state_reset"
+  ],
+  "security": "API keys, full prompts, and raw audio are strictly excluded from output."
+}

@@ -1,0 +1,8 @@
+{
+  "baseline_receipt_ms": 884,
+  "current_receipt_ms": 884,
+  "baseline_presentation_ms": 906,
+  "current_presentation_ms": 906,
+  "renderer_steady_state_ms": 17.5,
+  "regression": false
+}

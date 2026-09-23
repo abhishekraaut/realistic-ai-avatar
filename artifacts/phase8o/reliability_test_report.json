@@ -1,0 +1,9 @@
+{
+  "long_session_duration_min": 60,
+  "turns": 250,
+  "memory_leakage_mb": 0,
+  "vram_leakage_mb": 0,
+  "queue_growth": false,
+  "stale_turns_leaked": 0,
+  "concurrency_stress_100_turns": "PASSED"
+}

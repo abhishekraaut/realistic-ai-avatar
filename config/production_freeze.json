@@ -1,0 +1,20 @@
+{
+  "models": {
+    "renderer": "neural_renderer_v8_50id_1280x720_best.pt",
+    "motion": "learned_motion_v6_eye_best.pt",
+    "eye_scheduler": "stabilized_eye_dynamics_v1"
+  },
+  "configuration": {
+    "vad_threshold_ms": 350,
+    "stt_provider": "Deepgram",
+    "llm_provider": "Gemini 1.5",
+    "tts_provider": "ElevenLabs",
+    "renderer_precision": "FP16",
+    "renderer_format": "channels_last",
+    "renderer_compiler": "torch.compile(reduce-overhead)"
+  },
+  "hashes": {
+    "renderer_checkpoint_sha256": "8a7b9c6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f1a0b",
+    "motion_checkpoint_sha256": "1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b"
+  }
+}

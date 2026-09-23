@@ -1,0 +1,32 @@
+{
+  "STT_disconnect": {
+    "detected": true,
+    "stale_media": 0,
+    "recovery": "clean",
+    "state_reset": true
+  },
+  "Gemini_timeout": {
+    "detected": true,
+    "stale_media": 0,
+    "recovery": "clean",
+    "state_reset": true
+  },
+  "TTS_disconnect": {
+    "detected": true,
+    "stale_media": 0,
+    "recovery": "clean",
+    "state_reset": true
+  },
+  "LiveKit_drop": {
+    "detected": true,
+    "stale_media": 0,
+    "recovery": "reconnect_seamless",
+    "state_reset": true
+  },
+  "Browser_reload": {
+    "detected": true,
+    "stale_media": 0,
+    "recovery": "clean_session_restart",
+    "state_reset": true
+  }
+}

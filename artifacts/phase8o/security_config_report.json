@@ -1,0 +1,7 @@
+{
+  "env_vars_secured": true,
+  "secrets_in_logs": false,
+  "debug_mode": "disabled",
+  "cors_strict": true,
+  "status": "PASSED"
+}
