@@ -1,0 +1,8 @@
+{
+  "duration_min": 35,
+  "turns": 112,
+  "memory_growth": false,
+  "queue_growth": false,
+  "stale_residual_count": 0,
+  "stale_frame_count": 0
+}

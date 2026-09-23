@@ -1,0 +1,6 @@
+{
+  "production_default_changed": false,
+  "barge_in_cleared": true,
+  "identity_reset_cleared": true,
+  "fallback_behavior": "Explicitly fails closed if requested experimental mode cannot be fulfilled."
+}

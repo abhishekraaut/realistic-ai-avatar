@@ -1,0 +1,9 @@
+{
+  "default": {
+    "expression_residual_mode": "disabled"
+  },
+  "experimental": {
+    "expression_residual_mode": "stochastic_silent"
+  },
+  "safety": "Defaults to disabled. If checkpoint missing and mode=stochastic_silent, initialization fails closed."
+}

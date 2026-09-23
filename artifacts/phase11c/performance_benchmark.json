@@ -1,0 +1,9 @@
+{
+  "A_V6_only_ms": 1.2,
+  "B_residual_only_ms": 0.8,
+  "C_V6_plus_residual_ms": 2.0,
+  "D_V6_plus_residual_plus_V9_ms": 21.2,
+  "sustained_fps": 25,
+  "vram_allocated_mb": 535,
+  "vram_reserved_mb": 795
+}

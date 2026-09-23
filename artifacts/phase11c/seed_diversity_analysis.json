@@ -1,0 +1,7 @@
+{
+  "seed_determinism": "Pass. Identical seed yields identical trajectory.",
+  "pairwise_distance": 0.22,
+  "residual_bound_violations": 0,
+  "collapse_rate": 0.0,
+  "high_frequency_energy": "Low (temporally smoothed)"
+}

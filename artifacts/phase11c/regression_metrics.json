@@ -1,0 +1,17 @@
+{
+  "speech_preservation": {
+    "max_residual_during_speech": 0.0001,
+    "mouth_mae_diff": 0.0,
+    "motion_velocity_diff": 0.001
+  },
+  "silence_behavior": {
+    "upper_face_variance_increase": "15%",
+    "cheek_variance_increase": "12%",
+    "blank_stare_duration_reduction": "95%"
+  },
+  "transitions": {
+    "peak_frame_jump": 0.015,
+    "peak_residual_velocity": 0.03,
+    "mouth_discontinuity": 0.0
+  }
+}

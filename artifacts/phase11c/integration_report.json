@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "architecture": "M_final = V6 + G_silence * R_stochastic",
+  "gating": "Deterministic RMS-audio gate. Strict zero-forcing during active speech.",
+  "resets": "Stochastic latent states fully cleared on turn cancellation, barge-in, and identity switch."
+}
