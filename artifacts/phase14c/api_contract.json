@@ -1,0 +1,10 @@
+{
+  "POST /v1/sessions": "Create Session",
+  "POST /v1/sessions/{id}/start": "Start Session",
+  "POST /v1/sessions/{id}/stop": "Stop Session",
+  "POST /v1/sessions/{id}/interrupt": "Barge In",
+  "POST /v1/sessions/{id}/identity": "Identity Switch",
+  "GET /v1/status": "Status",
+  "GET /v1/health": "Health",
+  "GET /v1/ready": "Ready"
+}

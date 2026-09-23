@@ -1,0 +1,8 @@
+{
+  "Anonymous": "401 Unauthorized",
+  "Expired Token": "401 Unauthorized",
+  "Wrong Audience": "403 Forbidden",
+  "User A + Session A": "200 OK",
+  "User A + Session B": "403 Forbidden",
+  "User B + Session A": "403 Forbidden"
+}

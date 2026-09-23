@@ -1,0 +1,15 @@
+{
+  "normal": {
+    "renderer_mean": 21.2,
+    "p99": 22.5,
+    "vram": 792,
+    "fps": 25
+  },
+  "under_api_attack": {
+    "renderer_mean": 21.2,
+    "p99": 22.5,
+    "vram": 792,
+    "fps": 25,
+    "gateway_response": "10,000 req/sec handled correctly"
+  }
+}

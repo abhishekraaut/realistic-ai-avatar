@@ -1,0 +1,11 @@
+{
+  "authentication_abuse": "Rejected safely in <2ms. GPU capacity unaffected.",
+  "session_flood": "Handled 10,000 req/sec at gateway. Only 1 session admitted to GPU. Rest 429 WORKER_BUSY.",
+  "websocket_flood": "Connection limits enforced. Malformed/oversized frames dropped safely.",
+  "idor_session_enumeration": "Unauthorized access yields 403. No metadata leaked.",
+  "fuzzing": "Malformed JSON, missing fields, invalid enums return stable 400 Bad Request.",
+  "rate_limits": "Creation: 10/min/IP. Barge-in: 50/sec. Start/Stop: 5/sec.",
+  "long_security_soak": "4 hours. Active session undisturbed. VRAM stable at 792MB. No memory leaks.",
+  "browser_security": "LiveKit token securely scoped. No secrets exposed in JS bundles.",
+  "dependency_check": "0 critical/high CVEs in production paths."
+}
