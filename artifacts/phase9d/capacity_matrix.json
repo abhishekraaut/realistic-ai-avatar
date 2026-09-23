@@ -1,0 +1,24 @@
+[
+  {
+    "Sessions": 1,
+    "VRAM_MB": 750,
+    "GPU_pct": 82,
+    "Renderer_p95_ms": 18.2,
+    "FPS": 25,
+    "Dropped_frames": 0,
+    "Queue_max": 2,
+    "Latency_p95_ms": 925,
+    "Result": "SUPPORTED"
+  },
+  {
+    "Sessions": 2,
+    "VRAM_MB": 1500,
+    "GPU_pct": 99,
+    "Renderer_p95_ms": 34.5,
+    "FPS": 19,
+    "Dropped_frames": 180,
+    "Queue_max": 5,
+    "Latency_p95_ms": 1250,
+    "Result": "FAILED (Starvation)"
+  }
+]

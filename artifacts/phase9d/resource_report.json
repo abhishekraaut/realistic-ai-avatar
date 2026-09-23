@@ -1,0 +1,21 @@
+{
+  "1_session": {
+    "VRAM_allocated_mb": 510,
+    "VRAM_reserved_mb": 750,
+    "GPU_utilization_pct": 82,
+    "CPU_utilization_pct": 12,
+    "RAM_gb": 1.4
+  },
+  "2_sessions": {
+    "VRAM_allocated_mb": 1020,
+    "VRAM_reserved_mb": 1500,
+    "GPU_utilization_pct": 99,
+    "CPU_utilization_pct": 18,
+    "RAM_gb": 1.8
+  },
+  "headroom_1_session": {
+    "VRAM_pct": 87,
+    "GPU_pct": 18,
+    "CPU_pct": 88
+  }
+}

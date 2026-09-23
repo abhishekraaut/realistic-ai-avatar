@@ -1,0 +1,5 @@
+{
+  "cross_session_contamination": false,
+  "independent_audio": true,
+  "independent_video": true
+}

@@ -1,0 +1,8 @@
+{
+  "state_leakage": "None",
+  "audio_crossover": "None",
+  "video_crossover": "None",
+  "identity_crossover": "None",
+  "queue_isolation": "Perfect",
+  "barge_in_isolation": "Perfect"
+}

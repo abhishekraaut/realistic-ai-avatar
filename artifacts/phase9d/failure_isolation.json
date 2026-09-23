@@ -1,0 +1,14 @@
+{
+  "A_STT_disconnect": {
+    "Session_A": "Recovered",
+    "Session_B": "Unaffected"
+  },
+  "A_LLM_timeout": {
+    "Session_A": "Recovered",
+    "Session_B": "Unaffected"
+  },
+  "A_LiveKit_disconnect": {
+    "Session_A": "Reconnecting",
+    "Session_B": "Unaffected"
+  }
+}

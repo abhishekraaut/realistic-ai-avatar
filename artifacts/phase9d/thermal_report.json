@@ -1,0 +1,10 @@
+{
+  "1_session_30_min": {
+    "max_temp_c": 71,
+    "throttling": false
+  },
+  "2_sessions_10_min": {
+    "max_temp_c": 82,
+    "throttling": true
+  }
+}
