@@ -1,0 +1,11 @@
+torch==2.2.0
+torchaudio==2.2.0
+torchvision==0.17.0
+fastapi==0.109.0
+uvicorn==0.27.0
+livekit-server-sdk-python==0.5.1
+websockets==12.0
+deepgram-sdk==3.0.0
+google-generativeai==0.3.2
+elevenlabs==0.2.26
+numpy==1.26.3

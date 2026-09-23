@@ -1,0 +1,14 @@
+{
+  "learned_motion_v6_eye_best.pt": {
+    "sha256": "1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b",
+    "size_mb": 45.2,
+    "framework": "PyTorch 2.2.0",
+    "device": "CUDA"
+  },
+  "neural_renderer_v8_50id_1280x720_best.pt": {
+    "sha256": "8a7b9c6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f1a0b",
+    "size_mb": 510.5,
+    "framework": "PyTorch 2.2.0",
+    "device": "CUDA"
+  }
+}
