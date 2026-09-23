@@ -1,0 +1,4 @@
+{
+  "status": "PASS",
+  "description": "Single-node worker isolation verified. Multi-node physical isolation NOT_TESTED."
+}

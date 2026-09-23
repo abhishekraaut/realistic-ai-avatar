@@ -1,0 +1,15 @@
+{
+  "workers": [
+    {
+      "worker_id": "rtx3050-node-01",
+      "gpu_model": "NVIDIA GeForce RTX 3050",
+      "gpu_uuid": "GPU-abcd-1234",
+      "vram_gb": 6,
+      "driver": "535.104.05",
+      "cuda": "11.8",
+      "pytorch": "2.1.0",
+      "os": "Ubuntu 22.04 LTS"
+    }
+  ],
+  "untested_hardware": "Multiple GPUs, RTX 4080, RTX 4090"
+}

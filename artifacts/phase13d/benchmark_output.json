@@ -1,0 +1,11 @@
+{
+  "boundary": "T_motion_input_ready -> T_renderer_output_ready",
+  "mean_ms": 21.2,
+  "p50_ms": 21.2,
+  "p95_ms": 21.8,
+  "p99_ms": 22.5,
+  "max_ms": 24.0,
+  "fps": 25,
+  "vram_mb": 792,
+  "gpu_utilization_percent": 82
+}

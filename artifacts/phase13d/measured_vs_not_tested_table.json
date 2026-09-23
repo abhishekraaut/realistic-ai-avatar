@@ -1,0 +1,43 @@
+{
+  "data": [
+    {
+      "GPU": "RTX 3050",
+      "Workers": 1,
+      "Sessions": 1,
+      "Duration": "2h",
+      "Status": "MEASURED",
+      "Mean": "21.2ms",
+      "p95": "21.8ms",
+      "p99": "22.5ms",
+      "FPS": 25,
+      "VRAM": "792MB",
+      "Temp": "68C"
+    },
+    {
+      "GPU": "RTX 3050",
+      "Workers": 2,
+      "Sessions": 2,
+      "Duration": "-",
+      "Status": "NOT_TESTED",
+      "Mean": "-",
+      "p95": "-",
+      "p99": "-",
+      "FPS": "-",
+      "VRAM": "-",
+      "Temp": "-"
+    },
+    {
+      "GPU": "RTX 4080",
+      "Workers": 1,
+      "Sessions": 1,
+      "Duration": "-",
+      "Status": "NOT_TESTED",
+      "Mean": "-",
+      "p95": "-",
+      "p99": "-",
+      "FPS": "-",
+      "VRAM": "-",
+      "Temp": "-"
+    }
+  ]
+}

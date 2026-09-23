@@ -1,0 +1,6 @@
+{
+  "gateway_marks_unhealthy": true,
+  "router_excludes_worker": true,
+  "session_terminates_cleanly": true,
+  "state_crossover_prevented": true
+}

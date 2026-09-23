@@ -1,0 +1,8 @@
+{
+  "duration_hours": 2,
+  "temperature_c": 68,
+  "gpu_utilization_percent": 82,
+  "thermal_throttling": false,
+  "latency_drift": "None",
+  "fps_drift": "None"
+}

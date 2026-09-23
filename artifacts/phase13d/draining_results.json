@@ -1,0 +1,4 @@
+{
+  "status": "PASS",
+  "description": "Worker finishes active session and successfully returns to READY."
+}

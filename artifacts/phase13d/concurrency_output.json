@@ -1,0 +1,15 @@
+{
+  "tested": {
+    "workers": 1,
+    "sessions": 1,
+    "status": "MEASURED",
+    "admission_latency_ms": 2.1,
+    "queue_wait_ms": 0
+  },
+  "blocked": {
+    "workers": ">1",
+    "sessions": ">1",
+    "status": "NOT_TESTED",
+    "reason": "Hardware unavailability. Automatic harness rejection enforced max_capacity=1."
+  }
+}
