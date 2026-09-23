@@ -1,0 +1,9 @@
+{
+  "v6_motion_ms": 1.2,
+  "eye_scheduler_ms": 0.4,
+  "runtime_mask_ms": 0.8,
+  "v9_renderer_ms": 19.2,
+  "complete_generation_ms": 22.0,
+  "browser_presentation_t15_ms": 908,
+  "regression": false
+}

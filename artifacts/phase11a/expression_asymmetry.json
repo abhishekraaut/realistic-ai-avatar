@@ -1,0 +1,6 @@
+{
+  "left_right_mouth_diff_preserved": 0.35,
+  "left_right_cheek_diff_preserved": 0.2,
+  "left_right_eye_diff_preserved": 0.95,
+  "status": "V6 averages away extreme asymmetric mouth/cheek expressions due to deterministic L1 loss acting on ambiguous one-to-many mappings."
+}

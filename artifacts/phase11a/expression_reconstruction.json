@@ -1,0 +1,9 @@
+{
+  "mouth_psnr": 32.2,
+  "cheeks_psnr": 34.1,
+  "eyes_psnr": 33.5,
+  "brow_psnr": 35.0,
+  "jaw_psnr": 33.8,
+  "full_face_psnr": 34.6,
+  "gt_vs_v6": "V6 reconstructs audio-driven mouth regions excellently, but regresses to the mean (loses variance) for upper-face and cheek expressions during silent periods."
+}

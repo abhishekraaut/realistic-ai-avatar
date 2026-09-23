@@ -1,0 +1,5 @@
+{
+  "speech_expressions": "Strongly audio-correlated (shouting, broad smiles, articulation)",
+  "silent_expressions": "Mostly independent of audio (spontaneous smiles, blinks, brow raises)",
+  "pause_expressions": "Partially audio-correlated (anticipatory mouth opening)"
+}

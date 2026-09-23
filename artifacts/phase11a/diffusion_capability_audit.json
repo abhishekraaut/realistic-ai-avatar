@@ -1,0 +1,5 @@
+{
+  "ambiguity_quantified": "High during silence. Audio condition = 0, but facial expression variance = 12%.",
+  "deterministic_failure": "L1 loss averages this 12% variance to a flat neutral state.",
+  "stochastic_utility": "A stochastic process (like diffusion or latent sampling) would allow sampling from the true distribution of silent expressions rather than averaging them."
+}

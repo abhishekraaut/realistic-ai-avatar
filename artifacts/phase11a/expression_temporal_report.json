@@ -1,0 +1,5 @@
+{
+  "onset_timing": "Matches GT for speech, delayed/missed for spontaneous expressions",
+  "velocity": "Slightly oversmoothed compared to GT",
+  "smoothness": "Excellent (no jitter)"
+}

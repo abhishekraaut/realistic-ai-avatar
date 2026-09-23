@@ -1,0 +1,57 @@
+{
+  "neutral": {
+    "sequences": 4500,
+    "usable_frames": 1200000,
+    "identities": 50
+  },
+  "smile": {
+    "sequences": 1200,
+    "usable_frames": 300000,
+    "identities": 48
+  },
+  "broad_smile": {
+    "sequences": 400,
+    "usable_frames": 90000,
+    "identities": 35
+  },
+  "lowered_expression": {
+    "sequences": 150,
+    "usable_frames": 40000,
+    "identities": 22
+  },
+  "surprise_like": {
+    "sequences": 80,
+    "usable_frames": 12000,
+    "identities": 15
+  },
+  "anger_like": {
+    "sequences": 45,
+    "usable_frames": 6000,
+    "identities": 10
+  },
+  "concentration_like": {
+    "sequences": 300,
+    "usable_frames": 50000,
+    "identities": 28
+  },
+  "shouting": {
+    "sequences": 60,
+    "usable_frames": 8000,
+    "identities": 12
+  },
+  "asymmetric_mouth": {
+    "sequences": 200,
+    "usable_frames": 35000,
+    "identities": 18
+  },
+  "cheek_activation": {
+    "sequences": 600,
+    "usable_frames": 150000,
+    "identities": 45
+  },
+  "brow_activation": {
+    "sequences": 450,
+    "usable_frames": 110000,
+    "identities": 38
+  }
+}

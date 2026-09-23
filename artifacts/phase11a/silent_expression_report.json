@@ -1,0 +1,4 @@
+{
+  "v6_capability": "Poor. V6 predicts neutral states during audio silence.",
+  "reason": "Deterministic model. Without audio energy to drive the hidden state, it decays to the mean resting pose, missing spontaneous silent smiles or brow activations entirely."
+}

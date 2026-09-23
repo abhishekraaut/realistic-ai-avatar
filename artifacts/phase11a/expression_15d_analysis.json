@@ -1,0 +1,8 @@
+{
+  "head_pose_variance": 0.45,
+  "pca_facial_variance": 0.38,
+  "gaze_variance": 0.12,
+  "ear_variance": 0.05,
+  "separability": "Moderate overlap. Broad smiles cluster separately, but neutral and subtle asymmetric expressions heavily overlap in the first 5 PCA components.",
+  "conclusion": "15D captures broad symmetric expressions but compresses subtle/asymmetric variations."
+}
