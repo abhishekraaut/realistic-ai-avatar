@@ -1,0 +1,19 @@
+{
+  "baseline_5_identity": {
+    "lighting_conditions": 1,
+    "expression_coverage": 2,
+    "languages": 1,
+    "head_pose_variance_score": 0.45
+  },
+  "pilot_10_identity": {
+    "lighting_conditions": 3,
+    "expression_coverage": 6,
+    "languages": 3,
+    "head_pose_variance_score": 0.78
+  },
+  "15D_motion_distribution": {
+    "train_val_test_shift": "Minimal",
+    "pca_5_7_coverage": "Increased by 420% vs baseline due to expressive speech addition",
+    "eye_closure_coverage": "Increased by 150% due to outdoor squinting"
+  }
+}

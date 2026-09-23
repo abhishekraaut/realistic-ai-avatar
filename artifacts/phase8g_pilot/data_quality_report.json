@@ -1,0 +1,16 @@
+{
+  "sequences_evaluated": 35,
+  "passed_sequences": 33,
+  "quarantined_sequences": 2,
+  "quarantine_reasons": {
+    "SEQ_031": "Face detection < 95% (Extreme profile yaw clipping)",
+    "SEQ_034": "Licensing ambiguity (Standard YouTube License without explicit commercial waiver)"
+  },
+  "metrics": {
+    "face_detection_mean": 0.992,
+    "landmark_extraction_mean": 0.985,
+    "frame_audio_sync_validity": 1.0,
+    "v6_target_nans": 0,
+    "eye_target_nans": 0
+  }
+}

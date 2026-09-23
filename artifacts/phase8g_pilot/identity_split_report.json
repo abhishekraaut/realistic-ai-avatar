@@ -1,0 +1,12 @@
+{
+  "split_strategy": "Identity-Level Isolation",
+  "train": ["ID_001", "ID_003", "ID_004", "ID_006", "ID_008", "ID_009"],
+  "validation": ["ID_005", "ID_007"],
+  "test": ["ID_002", "ID_010"],
+  "leakage_audit": {
+    "cross_split_identities": 0,
+    "duplicate_sequences": 0,
+    "frame_leakage": 0
+  },
+  "status": "PASSED"
+}
