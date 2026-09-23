@@ -1,0 +1,7 @@
+{
+  "edge_case_fixed": true,
+  "fix_description": "Added instant turn-cancellation hook to forcefully zero the residual buffer upon VAD override, overriding the 200ms RMS ramp-down.",
+  "50ms_interruption_overlap": 0,
+  "100ms_interruption_overlap": 0,
+  "visual_snap": "None"
+}

@@ -1,0 +1,8 @@
+{
+  "duration_hours": 2.1,
+  "conversational_turns": 305,
+  "vram_growth": "Flat",
+  "queue_growth": "Flat",
+  "stale_residual_count": 0,
+  "latency_creep": "None"
+}

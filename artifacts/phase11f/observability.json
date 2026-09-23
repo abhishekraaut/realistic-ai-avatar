@@ -1,0 +1,20 @@
+{
+  "metrics_added": [
+    "expression_residual_enabled",
+    "expression_residual_activations",
+    "expression_residual_duration_ms",
+    "expression_residual_rms",
+    "expression_residual_max",
+    "expression_residual_clamp_count",
+    "speech_gate_overlap_count",
+    "residual_reset_count",
+    "stale_residual_drop_count",
+    "residual_checkpoint_version"
+  ],
+  "alerts_defined": [
+    "repeated residual checkpoint failure",
+    "unexpected clamp spikes",
+    "speech/residual overlap",
+    "stale residual > 0"
+  ]
+}

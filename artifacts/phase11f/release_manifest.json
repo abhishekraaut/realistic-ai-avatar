@@ -1,0 +1,18 @@
+{
+  "source_commit": "e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7",
+  "V6_checkpoint_checksum": "4552099401b073c9702acda7b2a926e5532785a47b3ee26f7c43aa484356950f",
+  "V9_checkpoint_checksum": "02242c41951aef33c69d868f310707affb3ee92c52f53fb4ab7611a8c7577e6d",
+  "stochastic_residual_checkpoint_checksum": "428d5614bc08d6fb249ef4611654976e08e3001b2e29fa7234d4fe32bb8e9206",
+  "config_version": "1.0",
+  "configuration_checksum": "7f988473e63ea4c2fc5a7d635192135692d5b8dee30062113bdcd0a495396a6a",
+  "python_version": "3.10.12",
+  "node_version": "18.17.0",
+  "cuda_version": "11.8",
+  "test_count": 412,
+  "benchmark_results": {
+    "total_generation_p95_ms": 21.2,
+    "fps_sustained": 25,
+    "vram_allocated_mb": 535,
+    "vram_reserved_mb": 795
+  }
+}
