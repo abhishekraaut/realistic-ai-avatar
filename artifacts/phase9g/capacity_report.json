@@ -1,0 +1,24 @@
+{
+  "measured": [
+    {
+      "Worker": "worker-gpu-001",
+      "GPU": "RTX 3050 6GB",
+      "VRAM": "6GB",
+      "Measured_max_sessions": 1,
+      "Renderer_p95": 18.2,
+      "FPS": 25,
+      "Temperature": 71,
+      "Result": "SUPPORTED"
+    }
+  ],
+  "unmeasured": [
+    {
+      "GPU": "RTX 4080 16GB",
+      "Measured_max_sessions": "NOT MEASURED"
+    },
+    {
+      "GPU": "RTX 4090 24GB",
+      "Measured_max_sessions": "NOT MEASURED"
+    }
+  ]
+}

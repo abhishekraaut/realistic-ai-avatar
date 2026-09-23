@@ -1,0 +1,2 @@
+# Phase 9G: Worker Deployment Validation
+The worker isolation framework executes securely. The `v0.1.0-avatar-rc` containerizes flawlessly into a standalone GPU Worker capable of registering with the stateless Gateway, managing a strict internal admission capacity of `1`, and gracefully draining connections upon request. Because multi-GPU hardware was physically unavailable, multi-worker parallel execution was logically verified but constrained to a single-worker physical deployment footprint for real metrics.

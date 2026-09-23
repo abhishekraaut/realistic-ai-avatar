@@ -1,0 +1,6 @@
+{
+  "action": "Worker receives DRAINING signal.",
+  "new_admissions": "Blocked.",
+  "active_session": "Allowed to complete naturally.",
+  "final_state": "Transitions to STOPPED once active_sessions == 0."
+}

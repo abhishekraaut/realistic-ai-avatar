@@ -1,0 +1,8 @@
+{
+  "environment": "Clean Room GPU",
+  "release_tag": "v0.1.0-avatar-rc",
+  "install_success": true,
+  "model_load_success": true,
+  "conversation_success": true,
+  "identity_match": true
+}

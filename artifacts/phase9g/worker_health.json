@@ -1,0 +1,10 @@
+{
+  "worker_id": "worker-gpu-001",
+  "state": "READY",
+  "active_sessions": 0,
+  "max_capacity": 1,
+  "gpu_available": true,
+  "gpu_utilization_pct": 0,
+  "vram_used_mb": 750,
+  "last_heartbeat": "2026-09-23T16:57:00Z"
+}

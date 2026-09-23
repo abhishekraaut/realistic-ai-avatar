@@ -1,0 +1,5 @@
+{
+  "heartbeat_loss": "Gateway marks worker UNHEALTHY. New sessions rejected. Active session terminates cleanly.",
+  "gpu_crash": "Gateway detects health failure. Marks worker UNHEALTHY.",
+  "session_migration": "NOT SUPPORTED. Clients must request a new session from the Gateway."
+}

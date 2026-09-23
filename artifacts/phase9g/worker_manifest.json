@@ -1,0 +1,9 @@
+{
+  "worker_id": "worker-gpu-001",
+  "release_version": "v0.1.0-avatar-rc",
+  "checkpoint_sha256": {
+    "v6": "4552099401b073c9702acda7b2a926e5532785a47b3ee26f7c43aa484356950f",
+    "renderer": "143261ad47f63bb24e361e93f7049301695834b35b821272db95fd05323246e8"
+  },
+  "max_capacity": 1
+}

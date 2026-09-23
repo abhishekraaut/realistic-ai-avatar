@@ -1,0 +1,6 @@
+{
+  "worker_gateway_auth": "PASS (Internal mutual auth)",
+  "logs_sanitized": "PASS",
+  "browser_exposure": "None. Gateway hides worker UUIDs and hardware telemetry.",
+  "cors": "Strictly bounded."
+}

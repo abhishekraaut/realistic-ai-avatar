@@ -1,0 +1,12 @@
+{
+  "request_1": {
+    "admitted": true,
+    "worker_assigned": "worker-gpu-001",
+    "worker_state_change": "BUSY"
+  },
+  "request_2": {
+    "admitted": false,
+    "worker_assigned": "None",
+    "reason": "No READY workers available"
+  }
+}
