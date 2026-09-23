@@ -1,0 +1,21 @@
+{
+  "yaw_ranges": [
+    "25-30",
+    "30-35",
+    "35-40",
+    ">40"
+  ],
+  "V8_psnr_drop": [
+    0.5,
+    1.8,
+    3.5,
+    5.2
+  ],
+  "V9_psnr_drop": [
+    0.2,
+    0.6,
+    1.1,
+    1.9
+  ],
+  "failure_mode": "GT 15D + V8 still produced >35 degree artifacts, proving failure is renderer geometric entanglement, not just V6 motion prediction."
+}

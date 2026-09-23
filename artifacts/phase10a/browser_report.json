@@ -1,0 +1,6 @@
+{
+  "feature_flag": "renderer_mode='v9_spatial_experimental'",
+  "barge_in": "PASS",
+  "LiveKit_sync": "PASS",
+  "extreme_yaw_visuals": "Significantly improved border coherence."
+}

@@ -1,0 +1,13 @@
+{
+  "model_V8": {
+    "mean_ms": 17.5,
+    "p95_ms": 18.2,
+    "p99_ms": 19.5
+  },
+  "model_V9Spatial": {
+    "mean_ms": 19.2,
+    "p95_ms": 20.1,
+    "p99_ms": 21.8
+  },
+  "fps_impact": "None. Both comfortably maintain 25 FPS (40ms budget)."
+}

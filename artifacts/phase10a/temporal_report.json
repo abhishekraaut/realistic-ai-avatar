@@ -1,0 +1,7 @@
+{
+  "frame_difference_mean": {
+    "V8": 0.012,
+    "V9Spatial": 0.011
+  },
+  "boundary_jitter": "V9 spatial mask stabilizes collar and hair boundaries, virtually eliminating crawling pixels."
+}

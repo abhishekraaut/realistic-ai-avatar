@@ -1,0 +1,6 @@
+{
+  "face_geometry": "Preserved",
+  "skin_texture": "Preserved",
+  "identity_leakage_freq": 0.0,
+  "status": "No regression"
+}

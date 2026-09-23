@@ -1,0 +1,14 @@
+{
+  "V8": {
+    "face_psnr": 34.5,
+    "neck_psnr": 28.1,
+    "hair_psnr": 29.5,
+    "background_psnr": 38.2
+  },
+  "V9Spatial": {
+    "face_psnr": 34.6,
+    "neck_psnr": 32.4,
+    "hair_psnr": 31.8,
+    "background_psnr": 41.5
+  }
+}

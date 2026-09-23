@@ -1,0 +1,18 @@
+{
+  "model": "V8_Frozen",
+  "yaw_25_30": {
+    "neck_artifact_freq": 0.05,
+    "shoulder_distortion": 0.02,
+    "background_leakage": 0.01
+  },
+  "yaw_30_35": {
+    "neck_artifact_freq": 0.18,
+    "shoulder_distortion": 0.08,
+    "background_leakage": 0.05
+  },
+  "yaw_gt_35": {
+    "neck_artifact_freq": 0.62,
+    "shoulder_distortion": 0.45,
+    "background_leakage": 0.38
+  }
+}

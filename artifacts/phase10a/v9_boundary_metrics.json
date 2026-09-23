@@ -1,0 +1,18 @@
+{
+  "model": "V9_Spatial",
+  "yaw_25_30": {
+    "neck_artifact_freq": 0.01,
+    "shoulder_distortion": 0.01,
+    "background_leakage": 0.0
+  },
+  "yaw_30_35": {
+    "neck_artifact_freq": 0.04,
+    "shoulder_distortion": 0.02,
+    "background_leakage": 0.01
+  },
+  "yaw_gt_35": {
+    "neck_artifact_freq": 0.12,
+    "shoulder_distortion": 0.08,
+    "background_leakage": 0.04
+  }
+}

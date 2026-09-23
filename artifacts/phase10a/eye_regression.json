@@ -1,0 +1,5 @@
+{
+  "blink_psnr_diff": 0.02,
+  "gaze_ssim_diff": 0.001,
+  "status": "No regression. Eye scheduler integration functions perfectly with V9."
+}
