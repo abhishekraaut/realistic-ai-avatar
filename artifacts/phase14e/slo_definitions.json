@@ -1,0 +1,26 @@
+{
+  "Availability": {
+    "target": "99.9%",
+    "measurement": "Successful API responses / Total API requests"
+  },
+  "Renderer_Latency": {
+    "target": "Mean < 22ms, p99 < 24ms",
+    "measurement": "T_motion_input_ready -> T_renderer_output_ready"
+  },
+  "FPS": {
+    "target": ">= 25",
+    "measurement": "Output frames per second"
+  },
+  "VRAM": {
+    "target": "< 850MB",
+    "measurement": "nvidia-smi / PyTorch allocated memory"
+  },
+  "Stale_Residual": {
+    "target": "0",
+    "measurement": "Continuous latent state > silence threshold"
+  },
+  "Gate_Overlap": {
+    "target": "0",
+    "measurement": "Simultaneous speech + silent-residual activation"
+  }
+}

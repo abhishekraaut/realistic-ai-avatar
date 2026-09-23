@@ -1,0 +1,5 @@
+{
+  "STT_LLM_TTS_Failure": "Client receives 502/503 HTTP status. Retryable. No stack trace.",
+  "Worker_Crash": "LiveKit disconnects cleanly (1011). Client state resets.",
+  "LiveKit_Outage": "Client connection drops, attempts reconnect. Gateway marks session unhealthy if timeout."
+}

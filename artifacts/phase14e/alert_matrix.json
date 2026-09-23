@@ -1,0 +1,18 @@
+{
+  "VRAM_High": {
+    "condition": "VRAM > 850MB",
+    "severity": "SEV-2"
+  },
+  "Stale_Residual_Detected": {
+    "condition": "stale_residual > 0",
+    "severity": "SEV-1"
+  },
+  "Gate_Overlap_Detected": {
+    "condition": "gate_overlap > 0",
+    "severity": "SEV-1"
+  },
+  "Renderer_Latency_Spike": {
+    "condition": "renderer latency > 30ms",
+    "severity": "SEV-2"
+  }
+}

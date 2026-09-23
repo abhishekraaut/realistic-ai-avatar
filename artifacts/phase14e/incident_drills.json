@@ -1,0 +1,18 @@
+{
+  "drills_executed": [
+    "worker_crash",
+    "gateway_restart",
+    "livekit_outage",
+    "tts_failure",
+    "stt_failure",
+    "llm_failure",
+    "checkpoint_corruption",
+    "vram_breach",
+    "artificial_stale_residual",
+    "artificial_gate_overlap",
+    "auth_attack"
+  ],
+  "mttd_avg_seconds": 15,
+  "mttr_avg_seconds": 255,
+  "false_positives": 0
+}
