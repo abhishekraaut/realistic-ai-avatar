@@ -1,0 +1,17 @@
+{
+  "hardware": "RTX 3050 6GB",
+  "training": {
+    "batch_size": 1,
+    "gradient_accumulation": 16,
+    "amp": "fp16",
+    "gradient_checkpointing": true,
+    "peak_allocated_vram_gb": 5.4,
+    "peak_reserved_vram_gb": 5.85,
+    "status": "Barely fits. Margin of safety < 150MB."
+  },
+  "inference": {
+    "peak_allocated_vram_mb": 420.0,
+    "peak_reserved_vram_mb": 605.0,
+    "status": "Fits comfortably."
+  }
+}

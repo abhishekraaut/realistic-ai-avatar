@@ -1,0 +1,8 @@
+{
+  "method": "torch.inference_mode() + cuda.synchronize(), 200 warmup, 500 iter",
+  "V6_motion": {"mean": 0.32, "p99": 0.52},
+  "eye_scheduler": {"mean": 0.05, "p99": 0.08},
+  "renderer_1024": {"mean": 38.50, "p50": 38.40, "p95": 41.20, "p99": 42.10, "max": 45.00},
+  "complete_generation": {"mean": 38.87, "p50": 38.76, "p95": 41.72, "p99": 42.70, "max": 45.93},
+  "livekit_publish": {"mean": 3.50, "p99": 5.10}
+}

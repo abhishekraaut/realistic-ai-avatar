@@ -1,0 +1,18 @@
+{
+  "mouth": {
+    "teeth_contours": "Materially sharper. Individual teeth distinguishable vs 512p blur.",
+    "lip_highlights": "Specular highlights resolve into distinct reflections."
+  },
+  "eyes": {
+    "iris_boundary": "Crisp. Much less pixelation.",
+    "eyelash_detail": "Individual lashes resolve correctly."
+  },
+  "skin": {
+    "pores": "Visible on high-quality source identities.",
+    "fine_texture": "Improved micro-texture preserved by VGG loss at 1024x1024."
+  },
+  "hair": {
+    "strand_structure": "Noticeably improved. Less 'blocky' temporal smearing."
+  },
+  "extreme_yaw_artifacts": "Geometry artifacts at >35 degrees are NOT solved. The tearing simply becomes a higher-resolution, sharper tear."
+}

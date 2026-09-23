@@ -1,0 +1,9 @@
+{
+  "frame_difference": "Stable, slightly higher variance due to resolved high frequencies.",
+  "landmark_velocity": "Identical to 512p.",
+  "jitter": "Trace high-frequency jitter on complex hair boundaries.",
+  "mouth_stability": "High.",
+  "eye_stability": "High.",
+  "boiling": "None observed.",
+  "flicker": "None observed."
+}

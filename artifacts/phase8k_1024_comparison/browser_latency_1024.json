@@ -1,0 +1,16 @@
+{
+  "T0_microphone_capture": 0,
+  "T1_deepgram_result": 450,
+  "T2_gemini_ttft": 800,
+  "T3_elevenlabs_first_audio": 1150,
+  "T4_canonical_audio_pts": 1160,
+  "T5_motion_ready": 1161,
+  "T6_renderer_ready": 1200,
+  "T7_livekit_publish": 1203,
+  "T8_browser_receipt": 1249,
+  "metrics": {
+    "T6_minus_T5_renderer_latency": 39,
+    "T8_minus_T0_total": 1249
+  },
+  "note": "Latency at 1024x1024 consumes nearly the entire 40ms frame budget for a 25FPS stream."
+}

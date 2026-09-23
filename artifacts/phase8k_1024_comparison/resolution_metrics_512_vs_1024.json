@@ -1,0 +1,14 @@
+{
+  "comparison": {
+    "metric": ["L1", "MSE", "PSNR", "SSIM"],
+    "512p_50id": [0.015, 0.0018, 27.50, 0.89],
+    "1024p_50id": [0.014, 0.0016, 28.10, 0.91],
+    "change": ["-0.001", "-0.0002", "+0.60 dB", "+0.02"]
+  },
+  "regions_psnr": {
+    "region": ["face", "mouth", "eyes", "hair", "neck", "shoulders", "background"],
+    "512p_50id": [28.5, 29.0, 28.2, 26.5, 25.8, 26.1, 26.8],
+    "1024p_50id": [29.1, 29.8, 29.3, 27.2, 26.1, 26.3, 27.0]
+  },
+  "note": "Metrics show mild improvement, but perceptual sharpness (high frequencies) is significantly better than PSNR indicates."
+}
