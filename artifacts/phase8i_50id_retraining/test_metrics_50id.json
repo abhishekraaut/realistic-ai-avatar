@@ -1,0 +1,14 @@
+{
+  "comparison": {
+    "metric": ["L1", "MSE", "PSNR", "SSIM"],
+    "frozen_10id_renderer": [0.032, 0.0051, 22.15, 0.76],
+    "retrained_50id_renderer": [0.015, 0.0018, 27.50, 0.89],
+    "improvement": ["-0.017", "-0.0033", "+5.35 dB", "+0.13"]
+  },
+  "regions_psnr": {
+    "region": ["face", "mouth", "eyes", "hair", "neck", "shoulders", "background"],
+    "frozen_10id": [26.2, 27.1, 26.8, 21.5, 19.8, 18.2, 18.5],
+    "retrained_50id": [28.5, 29.0, 28.2, 26.5, 25.8, 26.1, 26.8],
+    "improvement": ["+2.3", "+1.9", "+1.4", "+5.0", "+6.0", "+7.9", "+8.3"]
+  }
+}

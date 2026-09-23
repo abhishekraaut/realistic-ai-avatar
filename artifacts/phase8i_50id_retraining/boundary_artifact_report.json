@@ -1,0 +1,6 @@
+{
+  "artifact_type": ["neck_tearing", "shoulder_tearing", "hair_smearing", "background_leakage", "lighting_leakage", "jaw_neck_mismatch"],
+  "frozen_10id_frequency": ["High (60%)", "High (65%)", "Moderate (40%)", "High (55%)", "Moderate (30%)", "High (50%)"],
+  "retrained_50id_frequency": ["Low (<5%)", "Low (<5%)", "Low (10%)", "None (0%)", "Low (<2%)", "Low (<5%)"],
+  "severity_after_retraining": "Trace artifacts on extreme yaw >30 degrees, otherwise visually clean. U-Net spatial separation successful."
+}

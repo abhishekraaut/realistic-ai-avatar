@@ -1,0 +1,18 @@
+{
+  "architecture": "NeuralRendererV4Eye",
+  "checkpoint_out": "backend/training/checkpoints/neural_renderer_v6_50id_multienv_best.pt",
+  "hardware": "RTX 3050 6GB",
+  "batch_size": 2,
+  "gradient_accumulation": 8,
+  "optimizer": "AdamW (lr=2e-4, weight_decay=1e-5)",
+  "amp": "fp16",
+  "gradient_clipping": 1.0,
+  "peak_allocated_vram_gb": 4.5,
+  "peak_reserved_vram_gb": 4.8,
+  "epochs": 150,
+  "loss_weights": {
+    "l1": 1.0,
+    "temporal": 0.5,
+    "perceptual_vgg_relu22_relu33": 0.1
+  }
+}

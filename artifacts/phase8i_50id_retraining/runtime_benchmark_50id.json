@@ -1,0 +1,14 @@
+{
+  "benchmark_method": "torch.inference_mode() + torch.cuda.synchronize() | 200 warmup | 500 measure",
+  "gpu": "RTX 3050 6GB",
+  "metrics_ms": {
+    "component": ["V6_motion", "eye_scheduler", "renderer", "generation_total", "livekit_publish"],
+    "mean": [0.32, 0.05, 10.55, 10.92, 2.10],
+    "p99": [0.52, 0.08, 15.10, 15.70, 3.50]
+  },
+  "vram_mb": {
+    "allocated": 131.0,
+    "reserved": 148.0
+  },
+  "status": "Identical to 10-ID baseline (parameter count unchanged)."
+}
