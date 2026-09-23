@@ -1,0 +1,5 @@
+{
+  "production_startup": "V6 + V9 Default",
+  "disabled_mode_byte_match": true,
+  "fails_closed_on_corruption": true
+}

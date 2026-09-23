@@ -1,0 +1,9 @@
+{
+  "V6_ms": 1.2,
+  "stochastic_residual_ms": 0.8,
+  "V9_ms": 19.2,
+  "total_generation_ms": 21.2,
+  "fps_sustained": 25,
+  "vram_allocated_mb": 535,
+  "vram_reserved_mb": 795
+}

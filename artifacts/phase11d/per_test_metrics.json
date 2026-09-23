@@ -1,0 +1,39 @@
+{
+  "test1_diversity": {
+    "pairwise_distance": 0.22,
+    "twitching": "None",
+    "repetition_loops": "None"
+  },
+  "test2_long_silence": {
+    "max_excursion": 0.15,
+    "accumulation": "Bounded"
+  },
+  "test3_listener_realism": {
+    "behavior": "Mostly stable with occasional subtle variation (cheeks/brows)."
+  },
+  "test4_negative_case": {
+    "false_activation_on_micro_pause": 0.0
+  },
+  "test5_speech_boundary": {
+    "interference_with_articulation": "None",
+    "mouth_discontinuity": 0.0
+  },
+  "test6_expressive_conflict": {
+    "shout_to_silence_snap": "None, smooth decay"
+  },
+  "test7_asymmetry": {
+    "plausible_asymmetry_added": true
+  },
+  "test8_eye_interaction": {
+    "collisions": 0,
+    "gaze_popping": "None"
+  },
+  "test10_repetition": {
+    "loop_detected": false,
+    "nearest_neighbor_similarity": "Low"
+  },
+  "test11_session": {
+    "memory_leak": false,
+    "state_growth": false
+  }
+}

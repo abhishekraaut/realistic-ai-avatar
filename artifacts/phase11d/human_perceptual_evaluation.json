@@ -1,0 +1,7 @@
+{
+  "methodology": "Blinded A/B (V6 vs V6+Residual) on 10 clips across contexts",
+  "naturalness_during_listening": "85% preference for B",
+  "perceived_blank_stare": "Vastly reduced in B",
+  "excessive_movement": "Rated as appropriately subtle, not excessive",
+  "artificial_random_movement": "None reported"
+}
