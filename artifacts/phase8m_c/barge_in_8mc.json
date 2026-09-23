@@ -1,0 +1,8 @@
+{
+  "stale_audio": 0,
+  "stale_video": 0,
+  "stale_eye_state": 0,
+  "stale_speculative": 0,
+  "stale_turn_ids": 0,
+  "speculative_execution_test": "Tested passing partial STT to Gemini. Resulted in unacceptable semantic risks and complex rollback states during barge-in. Rejected."
+}

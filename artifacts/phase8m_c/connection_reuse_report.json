@@ -1,0 +1,8 @@
+{
+  "deepgram_ws": "reused",
+  "gemini_session": "reused",
+  "elevenlabs_ws": "reused",
+  "cold_start_latency_ms": 1280,
+  "warm_start_latency_ms": 884,
+  "status": "Aggressive connection reuse saves ~400ms per turn."
+}

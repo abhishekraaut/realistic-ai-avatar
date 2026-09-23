@@ -1,0 +1,6 @@
+{
+  "resolution_of_discrepancy": "The previous 515ms figure was the absolute timeline timestamp (T4), while 160ms is the duration delta (T4 - T3). There is no contradiction.",
+  "measured_ttft_delta": 160,
+  "measured_first_phrase_delta": 190,
+  "conclusion": "LLM latency is bounded at ~160ms TTFT."
+}

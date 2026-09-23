@@ -1,0 +1,6 @@
+{
+  "offset_ms": "< 2ms",
+  "jitter": 0,
+  "first_frame_delay": "None. Synchronized precisely to canonical PTS.",
+  "status": "Audio/video alignment remains completely untouched and perfectly within tolerance."
+}

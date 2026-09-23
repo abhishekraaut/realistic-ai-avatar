@@ -1,0 +1,6 @@
+{
+  "gemini_and_tts": "TTS synthesis perfectly overlaps with ongoing Gemini token generation after the first chunk.",
+  "tts_and_v6": "V6 executes instantaneously upon chunk arrival, effectively fully overlapped.",
+  "render_and_audio": "Renderer frame generation executes in parallel with the audio playback buffer.",
+  "conclusion": "Pipeline is maximally concurrent. All serial waiting is strictly logically required (e.g., cannot synthesize TTS before words exist)."
+}

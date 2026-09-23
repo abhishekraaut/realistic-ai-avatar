@@ -1,0 +1,6 @@
+{
+  "measured_ttfb_delta": 250,
+  "time_to_usable_audio": 250,
+  "network_setup_latency": 15,
+  "synthesis_latency": 235
+}

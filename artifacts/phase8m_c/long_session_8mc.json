@@ -1,0 +1,10 @@
+{
+  "duration_minutes": 30,
+  "turns": 115,
+  "latency_mean": 884,
+  "queue_size_max": 1,
+  "dropped_frames": 0,
+  "stale_turns": 0,
+  "sync_errors": 0,
+  "cumulative_latency_growth": false
+}

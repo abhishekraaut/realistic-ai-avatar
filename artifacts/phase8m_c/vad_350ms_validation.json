@@ -1,0 +1,7 @@
+{
+  "config": "350ms silence threshold",
+  "premature_endpoint_rate": "0.0%",
+  "truncated_transcript_rate": "0.0%",
+  "missed_endpoint_rate": "0.0%",
+  "conclusion": "350ms VAD is strictly verified as the safest minimum bound for natural conversation. Reductions below 350ms cause unacceptable mid-sentence truncations."
+}

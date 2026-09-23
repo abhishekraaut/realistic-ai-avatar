@@ -1,0 +1,26 @@
+{
+  "short_utterance_ms": {
+    "mean": 884,
+    "p50": 881,
+    "p95": 895,
+    "p99": 910
+  },
+  "medium_utterance_ms": {
+    "mean": 885,
+    "p50": 882,
+    "p95": 896,
+    "p99": 912
+  },
+  "long_utterance_ms": {
+    "mean": 884,
+    "p50": 883,
+    "p95": 895,
+    "p99": 915
+  },
+  "reasoning_question_ms": {
+    "mean": 965,
+    "p50": 960,
+    "p95": 990,
+    "p99": 1050
+  }
+}

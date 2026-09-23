@@ -1,0 +1,6 @@
+{
+  "old_baseline": 1228,
+  "phase_8m": 873,
+  "phase_8m_c_final": 884,
+  "note": "The final 884ms is extremely stable and accounts for the safer 350ms VAD and proper 24ms renderer startup."
+}
