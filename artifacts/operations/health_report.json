@@ -1,0 +1,12 @@
+{
+  "liveness": "PASS",
+  "readiness": "PASS",
+  "dependencies": {
+    "GPU": "AVAILABLE",
+    "Deepgram": "READY",
+    "Gemini": "READY",
+    "ElevenLabs": "READY",
+    "LiveKit": "CONNECTED"
+  },
+  "status": "Ready to serve."
+}

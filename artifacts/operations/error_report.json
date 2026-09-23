@@ -1,0 +1,14 @@
+{
+  "STT_TIMEOUT": {
+    "count": 0,
+    "recovery": "Turn reset"
+  },
+  "LLM_TIMEOUT": {
+    "count": 0,
+    "recovery": "Turn reset"
+  },
+  "LIVEKIT_DISCONNECTED": {
+    "count": 0,
+    "recovery": "WS Reconnect"
+  }
+}

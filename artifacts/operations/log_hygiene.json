@@ -1,0 +1,7 @@
+{
+  "api_keys_exposed": false,
+  "raw_audio_logged": false,
+  "pii_logged": false,
+  "structured_events_verified": true,
+  "rotation_configured": true
+}

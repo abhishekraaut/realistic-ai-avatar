@@ -1,0 +1,9 @@
+{
+  "cpu_utilization_pct": 12,
+  "ram_usage_gb": 1.4,
+  "gpu_utilization_pct": 82,
+  "gpu_memory_allocated_mb": 510,
+  "gpu_memory_reserved_mb": 750,
+  "queue_depth_max": 2,
+  "memory_growth": false
+}

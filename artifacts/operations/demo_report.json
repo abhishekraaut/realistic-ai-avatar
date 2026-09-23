@@ -1,0 +1,8 @@
+{
+  "runs": 20,
+  "success": 20,
+  "barge_ins_handled": 20,
+  "dropped_frames_total": 0,
+  "stale_media_leaks": 0,
+  "60_min_session": "PASS"
+}
