@@ -1,0 +1,14 @@
+{
+  "state_transitions": [
+    "STARTING -> READY",
+    "READY -> BUSY",
+    "BUSY -> READY",
+    "BUSY -> DRAINING",
+    "ANY -> UNHEALTHY"
+  ],
+  "health_checks": [
+    "heartbeat_ms",
+    "vram_limit",
+    "checkpoint_integrity"
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "tenant_isolation": "Pass",
+  "secret_logging": "Pass (None)",
+  "raw_audio_persistence": "Pass (None)"
+}

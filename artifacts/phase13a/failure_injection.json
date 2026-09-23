@@ -1,0 +1,6 @@
+{
+  "worker_crash": "Router immediately marked UNHEALTHY, re-routes new traffic.",
+  "heartbeat_timeout": "Marked UNHEALTHY after 3 missed heartbeats.",
+  "missing_checkpoint": "Worker fails to enter READY state.",
+  "draining_test": "Worker completes current session, rejects new ones, shuts down cleanly."
+}

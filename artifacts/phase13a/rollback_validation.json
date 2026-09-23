@@ -1,0 +1,4 @@
+{
+  "status": "Pass",
+  "description": "Gateway gracefully falls back to legacy v0.3.0 direct-worker path when routing is disabled."
+}

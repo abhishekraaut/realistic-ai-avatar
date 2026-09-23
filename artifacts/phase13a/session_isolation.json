@@ -1,0 +1,7 @@
+{
+  "test_type": "software_multi_worker_validation",
+  "identity_crossover": 0,
+  "v6_state_crossover": 0,
+  "livekit_credentials_crossover": 0,
+  "conclusion": "Strict process boundary isolation proven."
+}

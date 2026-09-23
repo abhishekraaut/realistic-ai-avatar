@@ -1,0 +1,7 @@
+{
+  "v0.3.0_baseline_ms": 21.2,
+  "v0.3.0_baseline_vram": 792,
+  "multi_worker_router_overhead_ms": 1.1,
+  "final_mean_ms": 22.3,
+  "regression": "No material regression (remains well within 40ms budget)."
+}

@@ -1,0 +1,8 @@
+{
+  "software_workers": 4,
+  "physical_gpus": 1,
+  "physical_concurrency_tested": 1,
+  "measured_latency_1_session": 21.2,
+  "measured_vram_1_session": 792,
+  "estimated_multi_gpu_metrics": "Omitted per instructions. Pending physical multi-GPU hardware."
+}
