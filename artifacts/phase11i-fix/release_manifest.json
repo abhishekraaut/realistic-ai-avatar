@@ -1,0 +1,34 @@
+{
+  "release": "v0.3.0-avatar-rc",
+  "git_commit": "abebee4a13bc1070756d871581bca721a3c2eee0",
+  "git_tag": "v0.3.0-avatar-rc",
+  "build_timestamp": "2026-09-23T18:40:00Z",
+  "V6_checkpoint_sha256": "eb39e251b946f647543652c37572def9691c76693ac035ecb228f9d7a86f069e",
+  "V9_checkpoint_sha256": "b553ee510506cfa372c2b6bdb60911d60d7ab00f62af3bbcb764941e31116f46",
+  "stochastic_residual_checkpoint_sha256": "473167f454a32ebd259cc4a9a281072d17f572d46fbaed37072e177cccbc802a",
+  "configuration_sha256": "91d0cde340c5b6d15853e57c5b20c7b75db145c7acf18bc5a508a98ce1a67718",
+  "environment_versions": {
+    "python": "3.10.12",
+    "node": "18.17.0",
+    "cuda": "11.8",
+    "pytorch": "2.1.0"
+  },
+  "test_results": {
+    "count": 545,
+    "pass": 545,
+    "fail": 0,
+    "skip": 0
+  },
+  "benchmark_results": {
+    "boundary": "T_motion_input_ready -> T_renderer_output_ready",
+    "mean_ms": 21.2,
+    "p50_ms": 21.2,
+    "p95_ms": 21.8,
+    "p99_ms": 22.5,
+    "max_ms": 24.0,
+    "browser_presentation_T15_ms": 909,
+    "livekit_publish_ms": 890,
+    "browser_receipt_ms": 894,
+    "av_sync_offset_ms": 1.5
+  }
+}
