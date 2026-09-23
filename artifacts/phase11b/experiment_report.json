@@ -1,0 +1,12 @@
+{
+  "architecture": "Lightweight Latent VAE Residual",
+  "inputs": [
+    "v6_history",
+    "silence_duration",
+    "audio_energy"
+  ],
+  "gating": "Smoothed sigmoid (G_silence) based on trailing 200ms audio RMS",
+  "clamping": "Residual bounded to +/- 0.15 standard deviations",
+  "eye_override": "Zeroed. Eye scheduler remains 100% authoritative.",
+  "conclusion": "Generates plausible listening behaviors (idle cheek/brow movement) without degrading speech."
+}

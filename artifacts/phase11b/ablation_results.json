@@ -1,0 +1,6 @@
+{
+  "v6_only": "Blank stare during silence. Perfect speech.",
+  "v6_plus_deterministic_residual": "Fails. Learns the mean (zero) during silence due to L1 loss on ambiguous targets.",
+  "v6_plus_stochastic_residual": "Succeeds in generating plausible diversity. Does not improve GT reconstruction.",
+  "critical_scientific_check": "Stochastic residual improves plausibility and diversity, NOT ground-truth prediction."
+}

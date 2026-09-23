@@ -1,0 +1,4 @@
+{
+  "gating_delay": "If speech resumes suddenly after a long silence, the 200ms ramp-down can occasionally cause a 1-2 frame overlap of residual + speech, though clamping prevents structural collapse.",
+  "seed_desync": "If seeds are not synchronized across distributed workers, state transitions can snap."
+}

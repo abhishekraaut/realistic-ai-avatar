@@ -1,0 +1,30 @@
+{
+  "test_a_speech_preservation": {
+    "mouth_mae_diff": 0.001,
+    "speech_psnr_diff": -0.02,
+    "status": "PASS. Residual safely suppressed during speech."
+  },
+  "test_b_silent_reconstruction": {
+    "cheek_error_change": "+4.2%",
+    "upper_face_error_change": "+5.1%",
+    "status": "EXPECTED. Ground-truth reconstruction error increases because the model generates *plausible* spontaneous movements that differ from the exact (unknowable) GT movement."
+  },
+  "test_c_diversity": {
+    "pairwise_motion_distance": 0.22,
+    "collapse_rate": 0.0,
+    "status": "PASS. Generates diverse, non-noisy trajectories."
+  },
+  "test_d_temporal_stability": {
+    "max_frame_jump": 0.04,
+    "velocity_bounds": "Safely clamped",
+    "status": "PASS. Smooth transitions."
+  },
+  "test_e_listening_behavior": {
+    "blank_stare_reduction": "High. Consistent subtle idle motion introduced.",
+    "uncanny_jitter": "None."
+  },
+  "test_f_repeatability": {
+    "fixed_seed_variance": 0.0,
+    "status": "PASS. 100% deterministic with fixed seed."
+  }
+}

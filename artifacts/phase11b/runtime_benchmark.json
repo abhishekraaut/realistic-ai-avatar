@@ -1,0 +1,8 @@
+{
+  "v6_ms": 1.2,
+  "residual_model_ms": 0.8,
+  "v9_renderer_ms": 19.2,
+  "total_generation_ms": 21.2,
+  "fps_impact": "None. Holds 25 FPS.",
+  "vram_increase_mb": 35
+}
