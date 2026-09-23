@@ -1,12 +1,14 @@
 {
   "learned_motion_v6_eye_best.pt": {
-    "sha256": "1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b0000000000000000000000000000000",
-    "size_mb": 45.2,
-    "framework": "PyTorch 2.2.0"
+    "path": "backend/training/checkpoints/learned_motion_v6_eye_best.pt",
+    "size_bytes": 62,
+    "sha256": "4552099401b073c9702acda7b2a926e5532785a47b3ee26f7c43aa484356950f",
+    "content_hash": "4552099401b073c9702acda7b2a926e5532785a47b3ee26f7c43aa484356950f"
   },
   "neural_renderer_v8_50id_1280x720_best.pt": {
-    "sha256": "8a7b9c6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f1a0b0000000000000000000000000000000",
-    "size_mb": 510.5,
-    "framework": "PyTorch 2.2.0"
+    "path": "backend/training/checkpoints/neural_renderer_v8_50id_1280x720_best.pt",
+    "size_bytes": 65,
+    "sha256": "143261ad47f63bb24e361e93f7049301695834b35b821272db95fd05323246e8",
+    "content_hash": "143261ad47f63bb24e361e93f7049301695834b35b821272db95fd05323246e8"
   }
 }
