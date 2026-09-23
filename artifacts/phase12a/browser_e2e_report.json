@@ -1,0 +1,8 @@
+{
+  "cold_start": "Pass",
+  "warm_start": "Pass",
+  "barge_in": "Pass",
+  "identity_switch": "Pass",
+  "lip_sync_validation": "Pass",
+  "stale_residual_validation": "Pass (0 stale states)"
+}

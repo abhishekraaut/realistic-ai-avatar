@@ -1,0 +1,10 @@
+{
+  "expression_residual_mode": "stochastic_silent",
+  "emergency_mode": "disabled",
+  "resolution": "1280x720",
+  "fps": 25,
+  "max_capacity": 1,
+  "hardware": "RTX 3050 6GB",
+  "renderer": "v9_spatial",
+  "vad_interrupt_clear_state": true
+}

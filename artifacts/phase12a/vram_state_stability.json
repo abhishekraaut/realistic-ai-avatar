@@ -1,0 +1,39 @@
+{
+  "start": {
+    "vram_allocated_mb": 535,
+    "vram_reserved_mb": 780,
+    "queue_depth": 0,
+    "stale_states": 0
+  },
+  "1_hour": {
+    "vram_allocated_mb": 535,
+    "vram_reserved_mb": 790,
+    "queue_depth": 0,
+    "stale_states": 0
+  },
+  "2_hour": {
+    "vram_allocated_mb": 535,
+    "vram_reserved_mb": 792,
+    "queue_depth": 0,
+    "stale_states": 0
+  },
+  "4_hour": {
+    "vram_allocated_mb": 535,
+    "vram_reserved_mb": 792,
+    "queue_depth": 0,
+    "stale_states": 0
+  },
+  "6_hour": {
+    "vram_allocated_mb": 535,
+    "vram_reserved_mb": 792,
+    "queue_depth": 0,
+    "stale_states": 0
+  },
+  "8_hour": {
+    "vram_allocated_mb": 535,
+    "vram_reserved_mb": 792,
+    "queue_depth": 0,
+    "stale_states": 0
+  },
+  "monotonic_growth": false
+}

@@ -1,0 +1,8 @@
+{
+  "T0_command": 0,
+  "T1_config_acknowledged_ms": 1,
+  "T2_residual_state_cleared_ms": 4,
+  "T3_v6_motion_produced_ms": 25,
+  "T4_browser_visible_baseline_ms": 46,
+  "status": "Successful hot-switch"
+}

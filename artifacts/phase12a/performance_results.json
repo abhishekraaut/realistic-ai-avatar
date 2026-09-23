@@ -1,0 +1,12 @@
+{
+  "boundary": "T_motion_input_ready -> T_renderer_output_ready",
+  "mean_ms": 21.2,
+  "p50_ms": 21.2,
+  "p95_ms": 21.8,
+  "p99_ms": 22.5,
+  "max_ms": 24.0,
+  "browser_T15_ms": 909,
+  "av_offset_ms": 1.5,
+  "livekit_publish_ms": 890,
+  "browser_receipt_ms": 894
+}

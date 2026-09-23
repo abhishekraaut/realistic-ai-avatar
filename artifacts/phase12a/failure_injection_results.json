@@ -1,0 +1,7 @@
+{
+  "missing_residual_checkpoint": "Fail closed safely",
+  "corrupt_residual_checkpoint": "Fail closed safely",
+  "invalid_dimension": "Fail closed safely",
+  "vad_interrupt": "Instant clear. Stale count 0.",
+  "livekit_reconnect": "Clean reset"
+}

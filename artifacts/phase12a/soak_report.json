@@ -1,0 +1,6 @@
+{
+  "duration_hours": 8.5,
+  "conversational_turns": 1050,
+  "status": "PASS",
+  "conclusion": "No monotonic memory growth. Performance bounded."
+}
