@@ -1,0 +1,5 @@
+{
+  "publish_ms": 3,
+  "webrtc_transport_ms": 46,
+  "status": "WebRTC receipt is T13. Browser display/compositor frame is unmeasured."
+}

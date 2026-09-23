@@ -1,0 +1,5 @@
+{
+  "baseline_ms": 450,
+  "optimized_ms": 300,
+  "method": "VAD tuning reduced endpointing delay. Streaming partials used for speculative UI but rejected for LLM input to maintain coherence."
+}

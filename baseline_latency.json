@@ -1,0 +1,19 @@
+{
+  "T0_microphone": 0,
+  "T1_stt_chunk": 20,
+  "T2_stt_stable": 450,
+  "T3_gemini_start": 455,
+  "T4_gemini_ttft": 650,
+  "T5_gemini_phrase": 850,
+  "T6_tts_start": 855,
+  "T7_tts_audio": 1150,
+  "T8_canonical_pts": 1160,
+  "T9_motion": 1160,
+  "T10_eye": 1161,
+  "T11_render": 1179,
+  "T12_livekit": 1182,
+  "T13_webrtc_receipt": 1228,
+  "metrics": {
+    "T13_minus_T0": 1228
+  }
+}

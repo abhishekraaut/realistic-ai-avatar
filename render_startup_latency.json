@@ -1,0 +1,7 @@
+{
+  "v6_ms": 0.32,
+  "eye_ms": 0.05,
+  "renderer_ms": 17.5,
+  "total_startup_ms": 18,
+  "status": "Steady-state inference matches first-frame startup latency. Highly stable."
+}

@@ -1,0 +1,5 @@
+{
+  "baseline_ms": 300,
+  "optimized_ms": 250,
+  "method": "Streaming request behavior applied. TTFB reduced slightly, but main gain is from receiving the LLM prompt 310ms earlier."
+}

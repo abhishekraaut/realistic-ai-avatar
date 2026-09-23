@@ -1,0 +1,45 @@
+{
+  "stages": [
+    {
+      "name": "STT_Wait",
+      "duration_ms": 450,
+      "cumulative_ms": 450
+    },
+    {
+      "name": "Gemini_TTFT_and_Phrase",
+      "duration_ms": 400,
+      "cumulative_ms": 850
+    },
+    {
+      "name": "ElevenLabs_TTFB",
+      "duration_ms": 300,
+      "cumulative_ms": 1150
+    },
+    {
+      "name": "Canonical_Audio_Buffer",
+      "duration_ms": 10,
+      "cumulative_ms": 1160
+    },
+    {
+      "name": "Motion_Prediction",
+      "duration_ms": 1,
+      "cumulative_ms": 1161
+    },
+    {
+      "name": "Render_1280x720",
+      "duration_ms": 18,
+      "cumulative_ms": 1179
+    },
+    {
+      "name": "LiveKit_Publish",
+      "duration_ms": 3,
+      "cumulative_ms": 1182
+    },
+    {
+      "name": "Network_and_Browser_WebRTC",
+      "duration_ms": 46,
+      "cumulative_ms": 1228
+    }
+  ],
+  "analysis": "TTS and LLM phrase buffering dominate latency (750ms combined)."
+}

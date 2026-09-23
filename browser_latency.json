@@ -1,0 +1,5 @@
+{
+  "T13_webrtc_receipt_latency": 873,
+  "T14_display_latency": "UNMEASURED",
+  "note": "Microphone-to-browser-receipt is 873ms. Do NOT call this glass-to-glass."
+}

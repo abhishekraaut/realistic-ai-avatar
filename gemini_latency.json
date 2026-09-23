@@ -1,0 +1,5 @@
+{
+  "baseline_ms": 400,
+  "optimized_ms": 235,
+  "method": "Implemented phrase-chunking. First short phrase triggers TTS immediately rather than waiting for full sentence completion."
+}
