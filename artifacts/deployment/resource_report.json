@@ -1,0 +1,7 @@
+{
+  "duration_min": 30,
+  "memory_growth_mb": 0,
+  "vram_growth_mb": 0,
+  "queue_depth_max": 2,
+  "latency_drift": false
+}

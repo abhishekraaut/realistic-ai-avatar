@@ -1,0 +1,9 @@
+{
+  "gpu_name": "NVIDIA RTX 3050",
+  "vram_gb": 6,
+  "cuda_runtime": "12.1",
+  "driver": "535.104.05",
+  "pytorch": "2.2.0",
+  "os": "Windows 11 / Ubuntu 22.04",
+  "node": "v24.21.0"
+}

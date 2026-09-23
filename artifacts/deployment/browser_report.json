@@ -1,0 +1,6 @@
+{
+  "reload": "Clean re-connection to LiveKit.",
+  "tab_background": "Stream pauses, recovers cleanly on foreground.",
+  "mic_permission_revoked": "Graceful warning.",
+  "mic_permission_restored": "Stream resumes."
+}

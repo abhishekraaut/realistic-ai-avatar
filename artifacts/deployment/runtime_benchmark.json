@@ -1,0 +1,9 @@
+{
+  "renderer_mean_ms": 17.5,
+  "renderer_p95_ms": 18.2,
+  "renderer_max_ms": 24.0,
+  "fps_sustained": 25,
+  "allocated_vram_mb": 510,
+  "reserved_vram_mb": 750,
+  "gpu_utilization_pct": 82
+}

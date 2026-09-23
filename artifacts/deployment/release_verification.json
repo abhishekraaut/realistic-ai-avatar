@@ -1,0 +1,7 @@
+{
+  "tag": "v0.1.0-avatar-rc",
+  "commit_sha": "169fcbfc780997704d01985f2639ca6ab84f4969",
+  "checkpoint_hashes_matched": true,
+  "dependencies_locked": true,
+  "working_tree_clean": true
+}

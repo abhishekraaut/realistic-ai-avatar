@@ -1,0 +1,7 @@
+{
+  "stt_disconnect": "Clean turn end, state reset.",
+  "llm_timeout": "TTS flushed, turn ID incremented.",
+  "tts_disconnect": "Renderer flushes, safe fallback.",
+  "livekit_disconnect": "Clean reconnect loop, no stale frames.",
+  "backend_restart": "Clean state re-initialization on startup."
+}
