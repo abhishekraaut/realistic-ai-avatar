@@ -1,0 +1,6 @@
+{
+  "simulation": "Killed RTX 3050 host process abruptly",
+  "gateway_behavior": "Marked worker UNAVAILABLE",
+  "session_behavior": "Terminated (ephemeral state dropped). Client received 1011 websocket close.",
+  "failover": "None. Blocked by hardware limitation (1 GPU total). Requires clean room restore."
+}

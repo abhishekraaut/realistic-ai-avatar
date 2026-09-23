@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "environment": "Ubuntu 22.04, Python 3.10, CUDA 11.8",
+  "steps_verified": [
+    "Clone release source",
+    "Install dependencies from lockfile",
+    "Download checkpoints from object storage",
+    "Verify hashes",
+    "Inject secrets",
+    "Start Gateway and Worker"
+  ],
+  "gpu_readiness": "Verified",
+  "hash_match": true
+}

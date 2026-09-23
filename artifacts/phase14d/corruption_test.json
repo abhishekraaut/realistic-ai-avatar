@@ -1,0 +1,5 @@
+{
+  "status": "PASS",
+  "test_method": "Flipped 1 byte in V6 and V9 checkpoint copies",
+  "result": "Startup HALTED. SHA256 mismatch detected. Process failed closed."
+}

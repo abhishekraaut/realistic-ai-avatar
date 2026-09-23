@@ -1,0 +1,13 @@
+{
+  "RTO_measured": "4m 12s",
+  "RPO_measured": "0s for ephemeral session state (lost by design). ~5m for telemetry logs.",
+  "breakdown": {
+    "T_restore_start": 0,
+    "T_artifacts_ready": "1m 30s",
+    "T_gpu_ready": "2m 15s",
+    "T_worker_ready": "2m 45s",
+    "T_gateway_ready": "3m 00s",
+    "T_first_session": "4m 00s",
+    "T_first_frame": "4m 12s"
+  }
+}
