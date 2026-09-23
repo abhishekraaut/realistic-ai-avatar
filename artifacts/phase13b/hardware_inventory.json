@@ -1,0 +1,11 @@
+{
+  "worker_A": {
+    "worker_id": "worker-A-local",
+    "gpu_model": "RTX 3050",
+    "vram": "6GB",
+    "cuda_version": "11.8",
+    "pytorch_version": "2.1.0"
+  },
+  "additional_workers": "None available",
+  "status": "BLOCKED"
+}

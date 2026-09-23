@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "Metric": "Latency (p99)",
+      "GPU": "1x RTX 3050",
+      "Sessions": 1,
+      "Type": "Measured",
+      "Result": "22.5ms"
+    },
+    {
+      "Metric": "VRAM",
+      "GPU": "1x RTX 3050",
+      "Sessions": 1,
+      "Type": "Measured",
+      "Result": "792MB"
+    },
+    {
+      "Metric": "Throughput",
+      "GPU": "Multiple GPUs",
+      "Sessions": ">1",
+      "Type": "Estimated",
+      "Result": "OMITTED - HARDWARE NOT AVAILABLE"
+    }
+  ]
+}
