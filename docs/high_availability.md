@@ -1,0 +1,2 @@
+# High Availability
+N+1 Redundancy and Zero-Downtime Worker Failover are currently NOT_VALIDATED. Testing HA requires a minimum of 2 physical GPUs to demonstrate cross-worker session replacement and gateway redirection without capacity exhaustion.

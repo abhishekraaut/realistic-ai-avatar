@@ -1,0 +1,5 @@
+{
+  "2_worker_test": "NOT_TESTED",
+  "4_worker_test": "NOT_TESTED",
+  "reason": "Hardware test blocked. Only 1 physical GPU exists in the inventory."
+}

@@ -1,0 +1,5 @@
+{
+  "N_plus_1_redundancy": "NOT_VALIDATED",
+  "zero_downtime_failover": "NOT_VALIDATED",
+  "reason": "Requires minimum of 2 physical GPUs to physically measure worker loss replacement."
+}
