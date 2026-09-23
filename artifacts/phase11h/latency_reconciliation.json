@@ -1,0 +1,24 @@
+{
+  "reconciliation_note": "Phase 11F reported mean total generation (21.2ms). Phase 11G reported p95 V9-only (19.5ms). Reconciled benchmark below uses consistent End-to-End model generation.",
+  "start_timestamp": "T_motion_input_ready",
+  "end_timestamp": "T_renderer_output_ready",
+  "includes": [
+    "V6",
+    "residual",
+    "V9"
+  ],
+  "baseline_v6_v9": {
+    "mean_ms": 20.4,
+    "p50_ms": 20.4,
+    "p95_ms": 21.0,
+    "p99_ms": 21.7,
+    "max_ms": 23.1
+  },
+  "stochastic_v6_res_v9": {
+    "mean_ms": 21.2,
+    "p50_ms": 21.2,
+    "p95_ms": 21.8,
+    "p99_ms": 22.5,
+    "max_ms": 24.0
+  }
+}

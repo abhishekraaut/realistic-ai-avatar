@@ -1,0 +1,8 @@
+{
+  "evaluator_count": 20,
+  "clip_count": 40,
+  "baseline_selections": 4,
+  "stochastic_selections": 34,
+  "ties": 2,
+  "qualitative": "In the tested evaluation set, 34/40 evaluators selected stochastic mode for natural listening, citing a reduction in static staring behavior."
+}

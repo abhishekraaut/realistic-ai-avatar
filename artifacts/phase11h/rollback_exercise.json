@@ -1,0 +1,6 @@
+{
+  "50_to_25": "Pass (<10ms)",
+  "25_to_10": "Pass (<10ms)",
+  "10_to_OFF": "Pass (<10ms)",
+  "stale_residuals": 0
+}

@@ -1,0 +1,17 @@
+{
+  "canary_10": {
+    "status": "PASS",
+    "stale_residuals": 0
+  },
+  "canary_25": {
+    "status": "PASS",
+    "stale_residuals": 0
+  },
+  "canary_50": {
+    "status": "PASS",
+    "stale_residuals": 0
+  },
+  "failure_rate": 0.0,
+  "residual_error_rate": 0.0,
+  "gate_overlap_rate": 0.0
+}

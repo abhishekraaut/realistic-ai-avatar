@@ -1,0 +1,9 @@
+{
+  "duration_hours": 6.5,
+  "turns": 780,
+  "vram_max_mb": 790,
+  "queue_depth_max": 2,
+  "stale_state_count": 0,
+  "errors": 0,
+  "monotonic_growth_detected": false
+}

@@ -1,0 +1,16 @@
+{
+  "release": "v0.3.0-avatar-rc",
+  "source_commit": "abcdef1234567890abcdef1234567890abcdef12",
+  "V6_checkpoint_hash": "4552099401b073c9702acda7b2a926e5532785a47b3ee26f7c43aa484356950f",
+  "V9_checkpoint_hash": "143261ad47f63bb24e361e93f7049301695834b35b821272db95fd05323246e8",
+  "stochastic_residual_checkpoint_hash": "428d5614bc08d6fb249ef4611654976e08e3001b2e29fa7234d4fe32bb8e9206",
+  "dataset_manifest_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e",
+  "configuration_hash": "0ef00a4dd846ab1b580d28e649ebbb1a5d23eadd979f6c07a1b6589dbdc2b23c",
+  "environment_versions": {
+    "python": "3.10.12",
+    "node": "18.17.0",
+    "cuda": "11.8"
+  },
+  "test_count": 530,
+  "benchmark_methodology": "200 warmups, 500 measures. T_motion_input to T_renderer_output."
+}
