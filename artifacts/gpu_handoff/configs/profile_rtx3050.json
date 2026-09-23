@@ -1,0 +1,9 @@
+{
+  "gpu_model": "RTX 3050 6GB",
+  "status": "VALIDATED",
+  "measured_sessions": 1,
+  "max_capacity": 1,
+  "renderer_mean_ms": 21.2,
+  "renderer_p99_ms": 22.5,
+  "vram_mb": 792
+}

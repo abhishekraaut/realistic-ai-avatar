@@ -1,0 +1,9 @@
+{
+  "gpu_model": "RTX 4090",
+  "status": "NOT_TESTED",
+  "measured_sessions": 0,
+  "max_capacity": 1,
+  "renderer_mean_ms": null,
+  "renderer_p99_ms": null,
+  "vram_mb": null
+}

@@ -1,47 +1,13 @@
-# Phase 7 to Phase 8 GPU Handoff Document
+# GPU Handoff Package
+This package enables hardware-independent scale-out readiness without modifying the avatar architecture.
 
-## Repository Status
-*   **Commit**: `910fe34` (`feat(avatar): implement Phase 7 learned audio-to-motion pipeline`)
-*   **Status**: Verified Working, Clean Tree.
+## Adding a New GPU Worker
+1. Provision cloud or local GPU instance.
+2. Run `gpu_readiness_check` to validate CUDA/PyTorch, checkpoint hashes, and VRAM.
+3. Run `benchmark_worker` to determine exact latency distributions on the new GPU.
+4. If successful, configure `max_capacity` based strictly on the harness output and register the worker with the Gateway.
 
-## Current Verified Pipeline
-The architectural orchestration logic is successfully locked:
-REAL AUDIO → AUDIO FEATURES → LEARNED MOTION → MOTION WINDOWS → FRAME SCHEDULER
-
-## Relevant Files for Handoff
-*   `backend/models/motion_model.py` (The Audio-to-Motion Model architecture)
-*   `backend/training/train_motion.py` (Training script with losses and optimizer)
-*   `backend/preprocessing/data_pipeline.py` (MediaPipe FaceLandmarker target extraction)
-*   `backend/training/prepare_dataset.py` (Audio stream feature mapping & temporal alignment)
-*   `backend/engine/learned_motion_timeline.py` (Inference contract wrapper)
-
-## Dataset Properties
-*   **Frames**: 250 (30.0 FPS)
-*   **Duration**: ~8.33 seconds
-*   **Audio Sample Rate**: 24000Hz (extracted via `moviepy`)
-*   **Input Features**: 80-bin Log-Mel Spectrogram
-*   **Target Labels**: 4-Dimensional (`jaw_open`, `lip_pucker`, `head_pitch`, `head_yaw`)
-
-## Model Profile
-*   **Architecture**: `LearnedTemporalMotionModel` (Conv1D + LSTM)
-*   **Total Parameters**: 61,316
-*   **Checkpoint**: `backend/training/checkpoints/learned_motion_v1.pt` (731 KB)
-
-## Execution Environment
-*   **Python**: 3.12
-*   **Frameworks**: PyTorch, NumPy, MediaPipe (`0.10.x`), OpenCV, Librosa
-*   **Training Command**: `python backend/training/train_motion.py`
-*   **Inference Verification**: `python verify_model.py`
-*   **Runtime Simulator**: `python backend/engine/compare_motion.py`
-
-## Heavy GPU Next Step
-
-**DO NOT immediately assume this model is final or production-ready.** The current checkpoint is explicitly an overfitted proof-of-concept proving tensor shapes, timestamps, orchestration, and gradient flow on CPU.
-
-The Heavy GPU Machine should strictly follow this sequence:
-1. **Load Checkpoint & Verify Inference**: Run `verify_model.py` to assert determinism and that tensor shapes match expectations.
-2. **GPU Benchmark**: Profile the LSTM + Conv1D throughput on CUDA to ensure RTF remains safely < 1.0.
-3. **Scale the Dataset**: Ingest the full Synthesia-like datasets using `data_pipeline.py` to extract tens of thousands of frames, keeping a rigid 80/10/10 Split.
-4. **Generalization Training**: Retrain `train_motion.py` tracking validation loss on genuinely held-out, non-overlapping sequences.
-5. **Architectural Scaling**: Expand the hidden dimensions or switch to a Temporal Transformer/DiT only if the larger dataset necessitates it. 
-6. **Phase 8 Transition**: Begin Neural Video Renderer architecture using the continuously generated `MotionWindow` representations.
+## Hardware Status
+- RTX 3050 6GB: VALIDATED (1 session)
+- Multi-GPU Cluster: NOT_TESTED (Blocked by hardware)
+- RTX 4080 / 4090: NOT_TESTED (Blocked by hardware)

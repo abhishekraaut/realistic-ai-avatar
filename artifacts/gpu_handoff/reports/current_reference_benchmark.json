@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "timestamp": "2026-09-23T19:10:00Z",
+    "git_commit": "0bd57d097abe4a0dae569c526a8a322fc26d113e",
+    "gpu": "RTX 3050 6GB",
+    "environment": "Ubuntu 22.04 LTS / Windows 11"
+  },
+  "results": [
+    {
+      "GPU": "RTX 3050 6GB",
+      "workers": 1,
+      "sessions": 1,
+      "measured_estimated": "MEASURED",
+      "mean_ms": 21.2,
+      "p99_ms": 22.5,
+      "vram_mb": 792
+    }
+  ],
+  "untested": [
+    {
+      "GPU": "Multiple GPUs",
+      "status": "NOT_TESTED - HARDWARE UNAVAILABLE"
+    },
+    {
+      "GPU": "RTX 4080",
+      "status": "NOT_TESTED - HARDWARE UNAVAILABLE"
+    },
+    {
+      "GPU": "RTX 4090",
+      "status": "NOT_TESTED - HARDWARE UNAVAILABLE"
+    }
+  ]
+}
