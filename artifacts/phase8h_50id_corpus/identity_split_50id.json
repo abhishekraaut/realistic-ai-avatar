@@ -1,0 +1,10 @@
+{
+  "split_strategy": "Identity-Level Isolation",
+  "train_count": 40,
+  "train": ["ID_001", "ID_003", "ID_004", "ID_006", "ID_008", "ID_009", "ID_011", "ID_012", "ID_013", "ID_014", "ID_015", "ID_017", "ID_018", "ID_019", "ID_020", "ID_021", "ID_022", "ID_023", "ID_024", "ID_025", "ID_026", "ID_027", "ID_028", "ID_029", "ID_030", "ID_032", "ID_033", "ID_034", "ID_035", "ID_036", "ID_037", "ID_038", "ID_039", "ID_040", "ID_041", "ID_042", "ID_043", "ID_044", "ID_045", "ID_046"],
+  "validation_count": 5,
+  "validation": ["ID_005", "ID_007", "ID_016", "ID_031", "ID_047"],
+  "test_count": 5,
+  "test": ["ID_002", "ID_010", "ID_048", "ID_049", "ID_050"],
+  "leakage_audit": "PASSED - Zero overlapping frames, sequences, or identities across splits."
+}

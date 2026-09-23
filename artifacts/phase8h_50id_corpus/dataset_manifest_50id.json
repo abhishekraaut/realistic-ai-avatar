@@ -1,0 +1,13 @@
+{
+  "total_identities": 50,
+  "total_sequences": 158,
+  "total_frames": 237000,
+  "total_duration_minutes": 158.0,
+  "canonical_resolution": "512x512",
+  "canonical_fps": 25,
+  "licensing_status": "CC-BY-4.0 / ODbL / Opt-in Waivers (100% Validated)",
+  "diversity_summary": {
+    "lighting": ["diffuse_frontal", "directional_left", "directional_right", "outdoor_daylight", "outdoor_overcast", "colored_gels", "mixed_indoor"],
+    "audio": ["conversational", "expressive_happy", "expressive_sad", "expressive_angry", "whispering", "shouting", "french", "spanish", "german"]
+  }
+}

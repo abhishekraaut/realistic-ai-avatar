@@ -1,0 +1,22 @@
+{
+  "raw_sequences_ingested": 182,
+  "passed_sequences": 158,
+  "quarantined_sequences": 24,
+  "quarantine_reasons": {
+    "landmark_failure": 12,
+    "face_detection_failure": 5,
+    "licensing_ambiguity": 7,
+    "15D_target_nan": 0
+  },
+  "metrics": {
+    "face_detection_mean": 0.985,
+    "landmark_extraction_mean": 0.980,
+    "frame_audio_sync_validity": 1.0,
+    "target_nan_inf_count": 0
+  },
+  "acquisition_efficiency": {
+    "raw_minutes": 185.5,
+    "usable_minutes": 158.0,
+    "yield_percentage": 0.85
+  }
+}
