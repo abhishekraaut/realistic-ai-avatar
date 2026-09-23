@@ -1,0 +1,7 @@
+{
+  "rehearsal_executed": true,
+  "release_identified": "v0.1.0-avatar-rc",
+  "checkpoint_restoration": "PASS",
+  "service_restart": "PASS",
+  "conversation_after_rollback": "PASS"
+}

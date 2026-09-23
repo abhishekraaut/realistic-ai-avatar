@@ -1,0 +1,22 @@
+{
+  "stt_disconnect": {
+    "detected": true,
+    "recovery": "PASS",
+    "next_session_ready": true
+  },
+  "llm_timeout": {
+    "detected": true,
+    "recovery": "PASS",
+    "next_session_ready": true
+  },
+  "tts_disconnect": {
+    "detected": true,
+    "recovery": "PASS",
+    "next_session_ready": true
+  },
+  "livekit_disconnect": {
+    "detected": true,
+    "recovery": "PASS",
+    "next_session_ready": true
+  }
+}

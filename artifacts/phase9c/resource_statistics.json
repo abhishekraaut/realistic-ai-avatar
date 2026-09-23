@@ -1,0 +1,7 @@
+{
+  "vram_allocated_mb_avg": 510,
+  "vram_reserved_mb_max": 750,
+  "gpu_utilization_pct_avg": 82,
+  "queue_depth_max": 2,
+  "stability": "Perfect resource stability across 50 sequential sessions."
+}

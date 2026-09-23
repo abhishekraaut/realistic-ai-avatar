@@ -1,0 +1,13 @@
+{
+  "total_sessions": 50,
+  "successful_sessions": 50,
+  "failed_sessions": 0,
+  "average_response_latency_ms": 906,
+  "p95_latency_ms": 925,
+  "max_latency_ms": 980,
+  "renderer_p95_ms": 18.2,
+  "dropped_frames": 0,
+  "reconnect_count": 0,
+  "stale_media_count": 0,
+  "failure_count": 0
+}
