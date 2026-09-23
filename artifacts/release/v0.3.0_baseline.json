@@ -1,0 +1,28 @@
+{
+  "release_version": "v0.3.0",
+  "commit": "0bd57d097abe4a0dae569c526a8a322fc26d113e",
+  "tag": "v0.3.0",
+  "checkpoints": {
+    "V6": "eb39e251b946f647543652c37572def9691c76693ac035ecb228f9d7a86f069e",
+    "stochastic_residual": "473167f454a32ebd259cc4a9a281072d17f572d46fbaed37072e177cccbc802a",
+    "V9": "b553ee510506cfa372c2b6bdb60911d60d7ab00f62af3bbcb764941e31116f46"
+  },
+  "resolved_config_hash": "ed2db08030867e5baddb9adeb5b04c1c277cf643b17b599eac70ff825aab9a12",
+  "production_slos": {
+    "availability_target": "99.9%",
+    "availability_measured": "99.99% (720h)",
+    "renderer_p99": "22.5ms",
+    "fps": "25",
+    "vram": "792MB",
+    "stale_residual": 0,
+    "gate_overlap": 0
+  },
+  "capacity_contract": "1 concurrent active session / RTX 3050 6GB",
+  "known_limitations": [
+    "No physical multi-GPU capacity measurement",
+    "No HA/N+1 validation",
+    "No zero-downtime worker migration",
+    "Synthetic stochastic listening behavior",
+    "Expression fidelity bounded by learned motion/data distribution"
+  ]
+}

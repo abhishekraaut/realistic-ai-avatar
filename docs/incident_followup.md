@@ -1,0 +1,2 @@
+# Incident Follow-up
+The single production worker crash during the 30-day window was root-caused to an OS-level memory eviction anomaly (driver context loss). Gateway recovery successfully isolated and mitigated the failure. Strict OS cgroups/resource limits are recommended to prevent recurrence.
