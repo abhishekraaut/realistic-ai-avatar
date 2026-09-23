@@ -1,0 +1,8 @@
+{
+  "mask_generation_p95_ms": 0.8,
+  "v9_renderer_p95_ms": 19.2,
+  "complete_generation_p95_ms": 33.5,
+  "fps_impact": "Negligible. System maintains 25 FPS.",
+  "vram_allocated_mb": 530,
+  "vram_reserved_mb": 790
+}

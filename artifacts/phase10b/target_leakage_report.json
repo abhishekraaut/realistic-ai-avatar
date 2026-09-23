@@ -1,0 +1,10 @@
+{
+  "audit_passed": true,
+  "dependencies": {
+    "identity_reference_image": "AVAILABLE_AT_INFERENCE",
+    "predicted_15D_motion": "AVAILABLE_AT_INFERENCE",
+    "target_frame_rgb": "GROUND_TRUTH_ONLY (Blocked)",
+    "target_frame_segmentation": "GROUND_TRUTH_ONLY (Blocked)"
+  },
+  "runtime_mask_leakage": "None. 100% inference-available variables."
+}

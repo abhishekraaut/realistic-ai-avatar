@@ -1,0 +1,6 @@
+{
+  "test_mode": "LiveKit with runtime mask",
+  "extreme_yaw": "PASS",
+  "barge_in": "PASS",
+  "identity_reset": "PASS (Mask correctly re-initializes from new reference)"
+}

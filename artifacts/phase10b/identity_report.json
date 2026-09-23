@@ -1,0 +1,5 @@
+{
+  "identity_regression": false,
+  "face_geometry": "Stable",
+  "hair_neck_boundaries": "Significantly improved at extreme poses."
+}

@@ -1,0 +1,5 @@
+{
+  "mask_jitter": "Low",
+  "mask_iou_t_minus_1": 0.98,
+  "temporal_stability": "High. The analytic warping is deterministically tied to the smoothly filtered 15D motion, preventing arbitrary mask flicker."
+}

@@ -1,0 +1,10 @@
+{
+  "design": "OPTION A: Identity-reference mask warped using current 15D motion.",
+  "metrics": {
+    "iou_vs_gt": 0.88,
+    "dice_vs_gt": 0.93,
+    "boundary_precision": 0.91,
+    "boundary_recall": 0.86,
+    "mean_absolute_error": 0.04
+  }
+}

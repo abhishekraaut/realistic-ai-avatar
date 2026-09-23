@@ -1,0 +1,8 @@
+{
+  "yaw_gt_35": {
+    "V8_neck_artifact_freq": 0.62,
+    "V9_Runtime_neck_artifact_freq": 0.18,
+    "improvement_factor": 3.4
+  },
+  "quality_gap": "Runtime mask retains ~85% of the visual boundary improvement seen with GT masks."
+}

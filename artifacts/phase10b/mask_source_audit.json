@@ -1,0 +1,5 @@
+{
+  "phase_10a_source": "Source frame soft-mask (Ground Truth)",
+  "live_inference_valid": false,
+  "reason": "Source frame is the target output, unavailable before rendering."
+}
