@@ -1,0 +1,13 @@
+{
+  "checkpoint": "neural_renderer_v8_50id_1280x720_best.pt",
+  "batch_size": 1,
+  "gradient_accumulation": 16,
+  "amp": "fp16",
+  "gradient_checkpointing": true,
+  "optimizer": "AdamW",
+  "learning_rate": 0.0001,
+  "epochs": 150,
+  "training_time_hours": 38,
+  "peak_vram_gb": 5.1,
+  "loss": "1.0*L1 + 0.5*temporal + 0.1*perceptual"
+}

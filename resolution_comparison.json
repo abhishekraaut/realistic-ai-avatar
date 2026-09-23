@@ -1,0 +1,15 @@
+{
+  "pixels": {
+    "1024x1024": 1048576,
+    "1280x720": 921600
+  },
+  "inference_latency_ms": {
+    "1024x1024": 20.2,
+    "1280x720": 17.5
+  },
+  "aspect_ratio": {
+    "1024x1024": "1:1",
+    "1280x720": "16:9"
+  },
+  "conclusion": "1280x720 provides widescreen framing with natively fewer pixels than 1024x1024, lowering latency and VRAM while maintaining crisp perceptual fidelity."
+}

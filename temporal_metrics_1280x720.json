@@ -1,0 +1,9 @@
+{
+  "frame_difference": "stable",
+  "landmark_velocity": "identical_to_1024",
+  "jitter": "trace_on_fine_hair",
+  "mouth_stability": "high",
+  "eye_stability": "high",
+  "boiling": false,
+  "flicker": false
+}

@@ -1,0 +1,10 @@
+{
+  "training": {
+    "peak_allocated_vram_gb": 4.8,
+    "peak_reserved_vram_gb": 5.1
+  },
+  "inference": {
+    "peak_allocated_vram_mb": 375.0,
+    "peak_reserved_vram_mb": 510.0
+  }
+}
