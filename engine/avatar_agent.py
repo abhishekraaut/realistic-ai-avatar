@@ -1,3 +1,14 @@
+
+import torch
+import os
+print("WORKER IDENTITY CHECK:")
+print("Worker Name: " + os.getenv("WORKER_NAME", "default-worker"))
+print("CUDA_VISIBLE_DEVICES: " + str(os.getenv("CUDA_VISIBLE_DEVICES")))
+print("Visible CUDA devices = " + str(torch.cuda.device_count()))
+if torch.cuda.is_available():
+    print("Physical target = GPU " + str(os.getenv("CUDA_VISIBLE_DEVICES")) + " (" + torch.cuda.get_device_name(0) + ")")
+else:
+    print("No GPU")
 import asyncio
 import logging
 import multiprocessing.context
@@ -199,6 +210,8 @@ if __name__ == "__main__":
     cli.run_app(
         WorkerOptions(
             entrypoint_fnc=entrypoint,
+            agent_name=os.getenv("WORKER_NAME", "default-worker"),
+            port=int(os.getenv("WORKER_PORT", 8081)),
             request_fnc=request_fnc,
             prewarm_fnc=prewarm,
         ),
