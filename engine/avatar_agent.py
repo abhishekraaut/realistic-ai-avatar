@@ -24,6 +24,7 @@ from livekit import rtc
 from livekit.agents import JobContext, JobProcess, JobRequest, WorkerOptions, cli, tts
 from livekit.agents.job import AutoSubscribe
 from livekit.agents.voice import Agent
+from engine.tools import AssistantFnc
 from livekit.plugins import deepgram, elevenlabs, silero, google
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -169,9 +170,11 @@ async def entrypoint(ctx: JobContext):
     participant = await ctx.wait_for_participant()
     logger.info(f"Starting Avatar for participant {participant.identity}")
     
+        fnc_ctx = AssistantFnc()
     agent = Agent(
         llm=google.LLM(model="gemini-2.5-flash", api_key=os.getenv("GEMINI_API_KEY")),
-        instructions="You are a helpful AI advisor."
+        fnc_ctx=fnc_ctx,
+        instructions="You are a helpful AI advisor. You have access to tools. If the user asks for weather, use the get_weather tool."
     )
     
     def on_state_changed(agent: Agent, state):
@@ -190,7 +193,8 @@ async def entrypoint(ctx: JobContext):
     base_tts = elevenlabs.TTS(api_key=os.getenv("ELEVENLABS_API_KEY") or os.getenv("ELEVEN_API_KEY"))
     sync_tts = SyncTTSWrapper(base_tts, timeline, feature_extractor, motion_predictor, scheduler)
 
-    from livekit.agents.voice import AgentSession
+    from livekit.agents.voice import Agent
+from engine.tools import AssistantFncSession
     session = AgentSession(
         stt=deepgram.STT(api_key=os.getenv("DEEPGRAM_API_KEY")),
         tts=sync_tts,
