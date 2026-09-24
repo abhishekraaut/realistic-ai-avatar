@@ -166,7 +166,9 @@ class NeuralRendererV3LiveKit:
             
         # Convert to RGB numpy [H, W, 3] for LiveKit
         rgb = ((out.squeeze(0).permute(1,2,0).cpu().numpy() + 1.0) * 127.5).clip(0,255).astype(np.uint8)
-        return rgb
+        import cv2
+        rgba = cv2.cvtColor(rgb, cv2.COLOR_RGB2RGBA)
+        return rgba
         
     def update_temporal_context(self, frame: np.ndarray):
         pass
