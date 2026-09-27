@@ -107,7 +107,7 @@ import numpy as np
 from .neural_renderer_v3 import NeuralRendererV3
 
 class NeuralRendererV3LiveKit:
-    def __init__(self, checkpoint_path='backend/training/checkpoints/neural_renderer_v6_768_best.pt', width=768, height=768):
+    def __init__(self, checkpoint_path='backend/training/checkpoints/neural_renderer_v7_multiid_research_best.pt', width=768, height=768):
         import os, logging
         logger = logging.getLogger("neural-renderer")
         if not os.path.exists(checkpoint_path):
